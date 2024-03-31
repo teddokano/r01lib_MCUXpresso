@@ -1,5 +1,5 @@
-/Users/tedd/dev/mcuxpresso/r01_a153/_r01lib_frdm_mcxn947/drivers/fsl_common_arm.h:732:24:DisableGlobalIRQ	16	static
-/Users/tedd/dev/mcuxpresso/r01_a153/_r01lib_frdm_mcxn947/drivers/fsl_common_arm.h:758:20:EnableGlobalIRQ	24	static
+/Users/tedd/dev/mcuxpresso/r01projects/_r01lib_frdm_mcxn947/drivers/fsl_common_arm.h:732:24:DisableGlobalIRQ	16	static
+/Users/tedd/dev/mcuxpresso/r01projects/_r01lib_frdm_mcxn947/drivers/fsl_common_arm.h:758:20:EnableGlobalIRQ	24	static
 ../component/serial_manager/fsl_component_serial_manager.c:426:32:SerialManager_StartWriting	32	static
 ../component/serial_manager/fsl_component_serial_manager.c:488:32:SerialManager_StartReading	32	static
 ../component/serial_manager/fsl_component_serial_manager.c:1248:32:SerialManager_Write	32	static

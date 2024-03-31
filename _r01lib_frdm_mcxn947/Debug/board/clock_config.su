@@ -1,4 +1,4 @@
-/Users/tedd/dev/mcuxpresso/r01_a153/_r01lib_frdm_mcxn947/drivers/fsl_clock.h:1389:20:CLOCK_EnableClock	24	static
+/Users/tedd/dev/mcuxpresso/r01projects/_r01lib_frdm_mcxn947/drivers/fsl_clock.h:1389:20:CLOCK_EnableClock	24	static
 ../board/clock_config.c:47:6:BOARD_InitBootClocks	8	static
 ../board/clock_config.c:84:6:BOARD_BootClockFRO12M	24	static
 ../board/clock_config.c:152:6:BOARD_BootClockFROHF48M	24	static
