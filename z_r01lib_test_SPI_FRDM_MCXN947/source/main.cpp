@@ -28,7 +28,6 @@ int main(void)
 			PRINTF( " 0x%02X", read_data[ i ] );
 
 		PRINTF( "\r\n" );
-		wait( 0.2 );
 	}
 }
 
