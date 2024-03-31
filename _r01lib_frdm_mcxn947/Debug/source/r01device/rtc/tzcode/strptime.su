@@ -1,0 +1,6 @@
+/Applications/MCUXpressoIDE_11.9.0_2144/ide/plugins/com.nxp.mcuxpresso.tools.macosx_11.9.0.202307121226/tools/arm-none-eabi/include/time.h:91:12:strptime	24	static
+../source/r01device/rtc/tzcode/strptime.c:113:1:_strptime	88	static
+../source/r01device/rtc/tzcode/strptime.c:614:1:_conv_num	32	static
+../source/r01device/rtc/tzcode/strptime.c:637:1:epoch_to_tm	40	static
+../source/r01device/rtc/tzcode/strptime.c:664:1:_find_string	32	static
+../source/r01device/rtc/tzcode/strptime.c:686:1:leaps_thru_end_of	16	static

@@ -1,0 +1,4 @@
+/Users/tedd/dev/mcuxpresso/r01_a153/_r01lib_frdm_mcxn947/utilities/fsl_debug_console.h:154:24:DbgConsole_Init	24	static
+../board/board.c:28:6:BOARD_InitDebugConsole	16	static
+../board/board.c:44:6:BOARD_InitDebugConsole_Core1	16	static
+../board/board.c:232:6:BOARD_PowerMode_OD	16	static

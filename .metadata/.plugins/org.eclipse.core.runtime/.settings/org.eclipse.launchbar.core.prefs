@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=aarch64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_simple LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXN947_demo LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_frdm_a153_test_DigitalOut_ARD_MB LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_frdm_a153_test_DigitalOut_RGB LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_frdm_n947_I2C LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_demo LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCX947_demo LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_frdm_test_a153_Ticker LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_frdm_test_n947_Ticker LinkServer Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_demo\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_demo\ LinkServer\ Debug/activeLaunchTarget=null\:---
