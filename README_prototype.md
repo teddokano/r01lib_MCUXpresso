@@ -18,16 +18,7 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 <br />
 - The image below shows  block diagram.
 
-*Description should provide a clear explanation of what the code is for, and provide links to any related documentation. If documentation is included in the Github repo then its location should be mentioned here, along with the name of documentation file(s). If the code is a snippet/general software, then a sufficient description must be provided for a developer to fully understand the example, either in this readme or in another document in the repo.*
-
-*If the code is an App SW pack then a link to the software summary page (SSP) on nxp.com must be provided.*
-
-*If the code is a demo, then a link to any related videos on nxp.com.Youtube, and/or other related pages must be provided.*
-
-*For training content you must reference the class training number (e.g. AMP-ENT-T4545), if available. You should also refer the reader to the training workbook and other materials from the class here.*
-
-*Ask yourself - if you were finding this code for the first time, is there enough information to make it useful? Think **QUALITY**.*
-
+*DEMO VIDEO LINK WILL BE HERE*
 
 #### Boards: FRDM-MCXN947, FRDM-MCXA153
 #### Categories: Sensor
@@ -62,18 +53,24 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 ## 3. Setup<a name="step3"></a>
 
 ### 3.1 Step 1: Download and Install required Software(s)
-- Install MCUXpresso IDE 11.9.0
+- Download and Install [MCUXpresso IDE 11.9.0](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
 - Download and Install one of following
   - MCXUpresso SDK 2.14.0 for FRDM-MCXN947
-  - Download and Install MCXUpresso SDK 2.14.2 for FRDM-MCXA153
+  - MCXUpresso SDK 2.14.2 for FRDM-MCXA153
 
-### 3.2 Step 2: Download or clone the APP-CODE-HUB/dm-nmh1000-magnetic-switch-example
+### 3.2 Step 2: Download or clone the APP-CODE-HUB/P3T1755_demo_on_FRDM_MCX_boards_vx.x.x
 - There are 2 options to get the example code : import or clone
 
 #### 3.2.1 Option 1 : Download the zip file and import it from file system
 - Launch MCUXpresso IDE and make new workspace
 - Download the zip file and store it on user's PC
-- Go to "Quickstart Panel" and click on "Import Project(s) from file system",
+- Go to "Quickstart Panel" and click on "Import Project(s) from file system"
+![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide0.png]  
+![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide1.png]  
+![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide2.png]  
+![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide3.png]  
+![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide4.png]  
+![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide5.png]  
 
 #### 3.2.2 Option2 : Import into IDE by clone
 - Launch MCUXpresso IDE and make new workspace
