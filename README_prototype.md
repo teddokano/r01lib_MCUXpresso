@@ -16,7 +16,7 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 <br />
 - "r01lib" is a MCU abstraction library to write code easy and presenting operation of serial buses and GPIO pins. The APIs are inspired by Arm Mbed SDK. This library is distributed as a part of this example code. 
 <br />
-- The image below shows  block diagram.
+![block](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/block.png) 
 
 *DEMO VIDEO LINK WILL BE HERE*
 
@@ -48,6 +48,7 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
   - [FRDM-MCXA153 MCU board](https://www.nxp.com/design/design-center/development-boards/general-purpose-mcus/frdm-development-board-for-mcx-a14x-a15x-mcus:FRDM-MCXA153)
 - Personal Computer
 - Type-C USB cable
+- Oscilloscope
 - (option) [P3T1755DP Arduino® Shield Evaluation Board](https://www.nxp.com/design/design-center/development-boards/analog-toolbox/arduino-shields-solutions/p3t1755dp-arduino-shield-evaluation-board:P3T1755DP-ARD)
 
 ## 3. Setup<a name="step3"></a>
@@ -65,12 +66,12 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 - Launch MCUXpresso IDE and make new workspace
 - Download the zip file and store it on user's PC
 - Go to "Quickstart Panel" and click on "Import Project(s) from file system"
-![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide0.png]  
-![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide1.png]  
-![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide2.png]  
-![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide3.png]  
-![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide4.png]  
-![https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide5.png]  
+![ide0](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide0.png)  
+![ide1](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide1.png)  
+![ide2](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide2.png)  
+![ide3](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide3.png)  
+![ide4](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide4.png)  
+![ide5](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide5.png)  
 
 #### 3.2.2 Option2 : Import into IDE by clone
 - Launch MCUXpresso IDE and make new workspace
