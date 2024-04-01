@@ -59,7 +59,9 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 
 ### 3.1 Step 0: Conect hardware
 - Connect an FRDM-MCXN947 or an FRDM-MCXA153 board to PC via USB cable
-- (option) connect I3C signals to an oscilloscope (FRDM-MCXN947:SDA=J5-3, SCL=J5-4, FRDM-MCXA153:SDA=J20, SCL=J21)
+- (option) connect I3C signals to an oscilloscope
+  - FRDM-MCXN947:SDA=J5-3, SCL=J5-4
+  - FRDM-MCXA153:SDA=J20, SCL=J21)
 
 ### 3.2 Step 1: Download and Install required Software(s)
 - Download and Install [MCUXpresso IDE 11.9.0](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
