@@ -16,6 +16,8 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 <br />
 - "r01lib" is a MCU abstraction library to write code easy and presenting operation of serial buses and GPIO pins. The APIs are inspired by Arm Mbed SDK. This library is distributed as a part of this example code. 
 <br />
+
+
 ![block](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/block.png) 
 
 *DEMO VIDEO LINK WILL BE HERE*
@@ -146,5 +148,5 @@ Questions regarding the content/correctness of this example can be entered as Is
 ## 7. Release Notes<a name="step7"></a>
 | Version | Description / Update                           | Date                        |
 |:-------:|------------------------------------------------|----------------------------:|
-| 1.0     | Initial release on Application Code Hub        | January 17<sup>th</sup> 2024 |
+| 1.0     | Initial release on Application Code Hub        | Apr 17<sup>th</sup> 2024 |
 
