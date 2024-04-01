@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>UNSTABLE_CS_PIN__ARD_PCF2131_SPI_simple_FRDM_MCXA153</name>
+	<name>ARD_PCF2131_SPI_interrupts_FRDM_MCXA153</name>
 	<comment></comment>
 	<projects>
 		<project>_r01lib_frdm_mcxa153</project>

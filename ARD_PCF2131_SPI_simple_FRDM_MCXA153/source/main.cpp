@@ -44,7 +44,7 @@ int main(void)
 }
 
 void set_time( void ) {
-	const char* current_time	= "2024-3-29 06:12:30";
+	const char* current_time	= "2024-4-1 10:41:30";
 	const char* format			= "%Y-%m-%d %H:%M:%S";
 	struct tm	now_tm;
 
