@@ -4,6 +4,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/app_templates.zip"/>
 			<item value="/Users/tedd/Desktop/AN_unified_workspace_base.zip"/>
 			<item value="/Users/tedd/Desktop/AN_unified_workspace_base_0.zip"/>
 		</list>
