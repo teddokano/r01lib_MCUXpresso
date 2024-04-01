@@ -10,8 +10,6 @@
 #include	"temp_sensor/P3T1755.h"
 #include	<time.h>
 
-#include	"fsl_i3c.h"
-
 I3C		i3c( I3C_SDA, I3C_SCL );	//	SDA, SCL
 P3T1755	p3t1755( i3c, P3T1755_ADDR_I2C );
 
