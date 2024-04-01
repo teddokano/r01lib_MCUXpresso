@@ -53,16 +53,20 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 
 ## 3. Setup<a name="step3"></a>
 
-### 3.1 Step 1: Download and Install required Software(s)
+### 3.1 Step 0: Conect hardware
+- Connect an FRDM-MCXN947 or an FRDM-MCXA153 board to PC via USB cable
+- (option) connect I3C signals to an oscilloscope (FRDM-MCXN947:SDA=J5-3, SCL=J5-4, FRDM-MCXA153:SDA=J20, SCL=J21)
+
+### 3.2 Step 1: Download and Install required Software(s)
 - Download and Install [MCUXpresso IDE 11.9.0](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
 - Download and Install one of following
   - MCXUpresso SDK 2.14.0 for FRDM-MCXN947
   - MCXUpresso SDK 2.14.2 for FRDM-MCXA153
 
-### 3.2 Step 2: Download or clone the APP-CODE-HUB/P3T1755_demo_on_FRDM_MCX_boards_vx.x.x
+### 3.3 Step 2: Download or clone the APP-CODE-HUB/P3T1755_demo_on_FRDM_MCX_boards_vx.x.x
 - There are 2 options to get the example code : import or clone
 
-#### 3.2.1 Option 1 : Download the zip file and import it from file system
+#### 3.3.1 Option 1 : Download the zip file and import it from file system
 - Launch MCUXpresso IDE and make new workspace
 - Download the zip file and store it on user's PC
 - Go to "Quickstart Panel" and click on "Import Project(s) from file system"
@@ -73,7 +77,9 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 ![ide4](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide4.png)  
 ![ide5](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide5.png)  
 
-#### 3.2.2 Option2 : Import into IDE by clone
+#### 3.3.2 Option2 : Import into IDE by clone
+!!!!!!!! This step is shown with temtative Github URL. It should be replaced before launch !!!!!!!!! 
+
 - Launch MCUXpresso IDE and make new workspace
 - Close welcome message and find "Project Explorer" panel in left-top pane. Click on "Import projects..."
 - Choose "Git" > "Projects from Git"
@@ -81,15 +87,26 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 - Clone "main" branch
 - Choose clone target directory. This will be a new workspace
 - Goto cloned workspace
-
-### 3.3 Conect hardware
-- Connect an FRDM-MCXN947 or an FRDM-MCXA153 board to PC via USB cable
+![clone0](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone0.png)  
+![clone1](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone1.png)  
+![clone2](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone2.png)  
+![clone3](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone3.png)  
+![clone4](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone4.png)  
+![clone5](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone5.png)  
+![clone6](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone6.png)  
+![clone7](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone7.png)  
+![clone8](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/clone8.png)  
 
 ### 3.4 Step 3: Build and run
-- Select a project in "Project Explorer" panel in left top pane (The "r01lib" project is just a library this code canot be executed alone)
+- Select a project in "Project Explorer" panel in left top pane (The `_r01lib_*`" projects are libraries. Those code cannot be executed alone)
 - Click "Debug" icon in "Quickstart Panel" or "Start debugging project" icon (blue bug icon) in icon-toolbar
 - The IDE will find the MCU board and resume the program at "main()" function started
 - Press "Resume" button in to continue from there
+![run0](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/run0.png) 
+![run1](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/run1.png) 
+![run2](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/run2.png) 
+![run3](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/run3.png) 
+![run4](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/run4.png) 
 
 ## 4. Results<a name="step4"></a>
 - Message and measured temperature value on terminal panel (middle-bottom pane) in MCUXpresso IDE
