@@ -20,7 +20,9 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 
 ![block](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/block.png) 
 
-*DEMO VIDEO LINK WILL BE HERE*
+**DEMO VIDEO LINK WILL BE HERE**
+**DEMO VIDEO LINK WILL BE HERE**
+**DEMO VIDEO LINK WILL BE HERE**
 
 #### Boards: FRDM-MCXN947, FRDM-MCXA153
 #### Categories: Sensor
@@ -51,7 +53,7 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 - Personal Computer
 - Type-C USB cable
 - Oscilloscope
-- (option) [P3T1755DP Arduino® Shield Evaluation Board](https://www.nxp.com/design/design-center/development-boards/analog-toolbox/arduino-shields-solutions/p3t1755dp-arduino-shield-evaluation-board:P3T1755DP-ARD)
+- (option but not used on this demo) [P3T1755DP Arduino® Shield Evaluation Board](https://www.nxp.com/design/design-center/development-boards/analog-toolbox/arduino-shields-solutions/p3t1755dp-arduino-shield-evaluation-board:P3T1755DP-ARD)
 
 ## 3. Setup<a name="step3"></a>
 
@@ -68,7 +70,7 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 ### 3.3 Step 2: Download or clone the APP-CODE-HUB/P3T1755_demo_on_FRDM_MCX_boards_vx.x.x
 - There are 2 options to get the example code : import or clone
 
-#### 3.3.1 Option 1 : Download the zip file and import it from file system
+#### 3.3.1 Step 2 - Option 1 : Download the zip file and import it from file system
 - Launch MCUXpresso IDE and make new workspace
 - Download the zip file and store it on user's PC
 - Go to "Quickstart Panel" and click on "Import Project(s) from file system"
@@ -79,8 +81,10 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 ![ide4](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide4.png)  
 ![ide5](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/ide5.png)  
 
-#### 3.3.2 Option2 : Import into IDE by clone
-!!!!!!!! This step is shown with temtative Github URL. It should be replaced before launch !!!!!!!!! 
+#### 3.3.2 Step 2 - Option2 : Import into IDE by clone
+**!!!!!!!! This step is shown with temtative Github URL. It should be replaced before launch !!!!!!!!!**  
+**!!!!!!!! This step is shown with temtative Github URL. It should be replaced before launch !!!!!!!!!**  
+**!!!!!!!! This step is shown with temtative Github URL. It should be replaced before launch !!!!!!!!!**  
 
 - Launch MCUXpresso IDE and make new workspace
 - Close welcome message and find "Project Explorer" panel in left-top pane. Click on "Import projects..."
@@ -116,10 +120,13 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 - In IBI enabled example, the IBI event will be shown in the terminal panel. The default setting to trigger the IBI is 2 degree-C higher temperature than program started (T_HIGH register set to T_program_start + 2 degC). IBI will be triggered again when the temperature down to T_start + 1degC. 
 - Probe on I3C signals and confirm the waveform. In IBI enabled example, D2 pin outputs trigger signal (falling edge) at IBI event for oscilloscope. 
 
-## 5. Support<a name="step5"></a>
-- Reach out to NXP Sensors Community page for more support - [NXP Community](https://)
+## 5. FAQ<a name="step5"></a>
+- None
+
+## 6. Support<a name="step5"></a>
+- Reach out to NXP Sensors Community page for more support - [NXP Community](https://community.nxp.com)
 - Learn more about P3T1755: I3C, I2C-bus interface, 0.5 °C accuracy, digital temperature sensor, refer to - [P3T1755 Product summary page](https://www.nxp.com/products/sensors/i3c-ic-digital-temp-sensors/i3c-ic-bus-0-5-c-accurate-digital-temperature-sensor:P3T1755DP)
-- "SYSTEM MANAGEMENT I²C, I3C AND SPI SELECTOR GUIDE" including introduction of I3C bus, refer to - [Sensors Development Ecosystem](https://www.nxp.com/design/design-center/software/sensor-toolbox:SENSOR-TOOLBOXX)
+- "SYSTEM MANAGEMENT I²C, I3C AND SPI SELECTOR GUIDE" including introduction of I3C bus, refer to - [Sensors Development Ecosystem](https://www.nxp.com/docs/en/product-selector-guide/I2CSELECTORBROC.pdf)
 
 
 
@@ -131,7 +138,7 @@ For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.
 [![Category badge](https://img.shields.io/badge/Category-SENSOR-yellowgreen)](https://github.com/search?q=org%3Anxp-appcodehub+sensor+in%3Areadme&type=Repositories) [![Category badge](https://img.shields.io/badge/Category-LOW%20POWER-yellowgreen)](https://github.com/search?q=org%3Anxp-appcodehub+low_power+in%3Areadme&type=Repositories)
 
 <!----- Peripherals ----->
-[![Peripheral badge](https://img.shields.io/badge/Peripheral-I2C-yellow)](https://github.com/search?q=org%3Anxp-appcodehub+i2c+in%3Areadme&type=Repositories) [![Peripheral badge](https://img.shields.io/badge/Peripheral-SENSOR-yellow)](https://github.com/search?q=org%3Anxp-appcodehub+sensor+in%3Areadme&type=Repositories) [![Peripheral badge](https://img.shields.io/badge/Peripheral-UART-yellow)](https://github.com/search?q=org%3Anxp-appcodehub+uart+in%3Areadme&type=Repositories)
+[![Peripheral badge](https://img.shields.io/badge/Peripheral-I3C-yellow)](https://github.com/search?q=org%3Anxp-appcodehub+i3c+in%3Areadme&type=Repositories) [![Peripheral badge](https://img.shields.io/badge/Peripheral-SENSOR-yellow)](https://github.com/search?q=org%3Anxp-appcodehub+sensor+in%3Areadme&type=Repositories) [!
 
 <!----- Toolchains ----->
 [![Toolchain badge](https://img.shields.io/badge/Toolchain-MCUXPRESSO%20IDE-orange)](https://github.com/search?q=org%3Anxp-appcodehub+mcux+in%3Areadme&type=Repositories)
