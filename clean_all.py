@@ -51,18 +51,22 @@ for target in doxy_path:
 		subprocess.run( "doxygen", shell = True )
 
 for target in prjs_path:
+	print( "####### cleaning: " + target )			
 	try:
 		os.chdir( target + "/Debug/" )
 	except:
-		print( "####### cleaning: " + target )			
+		pass
 	else:
 		print( "####### cleaning: " + target )
 		subprocess.run( "make -r -j9 clean", shell = True )
-		
+	
+	try:
 		os.chdir( target )
+	except:
+		pass
+	else:
 		subprocess.run( "rm -rf Debug/", shell = True )
-
-		print( "" )
+		subprocess.run( "rm *.launch *.mex", shell = True )
 
 print( "" )
 print( "======= process completed for .. =======" )
