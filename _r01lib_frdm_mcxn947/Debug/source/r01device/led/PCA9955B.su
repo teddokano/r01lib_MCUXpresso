@@ -1,4 +1,0 @@
-../source/r01device/led/PCA9955B.cpp:9:1:PCA9955B::~PCA9955B()	8	static
-../source/r01device/led/PCA9955B.cpp:9:1:virtual PCA9955B::~PCA9955B()	8	static
-../source/r01device/led/PCA9955B.cpp:13:6:virtual void PCA9955B::init(float)	24	static
-../source/r01device/led/PCA9955B.cpp:4:1:PCA9955B::PCA9955B(I2C&, uint8_t)	40	static

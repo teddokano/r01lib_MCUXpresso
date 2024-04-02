@@ -1,8 +1,0 @@
-../source/r01device/rtc/PCF2131_I2C.cpp:7:1:PCF2131_I2C::~PCF2131_I2C()	8	static
-../source/r01device/rtc/PCF2131_I2C.cpp:11:6:virtual void PCF2131_I2C::_reg_w(uint8_t, uint8_t*, int)	0	static
-../source/r01device/rtc/PCF2131_I2C.cpp:16:6:virtual void PCF2131_I2C::_reg_r(uint8_t, uint8_t*, int)	0	static
-../source/r01device/rtc/PCF2131_I2C.cpp:21:6:virtual void PCF2131_I2C::_reg_w(uint8_t, uint8_t)	0	static
-../source/r01device/rtc/PCF2131_I2C.cpp:26:9:virtual uint8_t PCF2131_I2C::_reg_r(uint8_t)	0	static
-../source/r01device/rtc/PCF2131_I2C.cpp:31:6:virtual void PCF2131_I2C::_bit_op8(uint8_t, uint8_t, uint8_t)	0	static
-../source/r01device/rtc/PCF2131_I2C.cpp:7:1:virtual PCF2131_I2C::~PCF2131_I2C()	8	static
-../source/r01device/rtc/PCF2131_I2C.cpp:3:1:PCF2131_I2C::PCF2131_I2C(I2C&, uint8_t)	16	static

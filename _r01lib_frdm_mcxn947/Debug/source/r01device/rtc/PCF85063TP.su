@@ -1,4 +1,0 @@
-../source/r01device/rtc/PCF85063TP.cpp:12:1:PCF85063TP::~PCF85063TP()	8	static
-../source/r01device/rtc/PCF85063TP.cpp:12:1:virtual PCF85063TP::~PCF85063TP()	8	static
-../source/r01device/rtc/PCF85063TP.cpp:3:6:void warning()	0	static
-../source/r01device/rtc/PCF85063TP.cpp:8:1:PCF85063TP::PCF85063TP(I2C&, uint8_t)	8	static
