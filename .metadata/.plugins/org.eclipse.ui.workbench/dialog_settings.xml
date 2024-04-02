@@ -4,6 +4,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/spi_samples_v0.16.3.zip"/>
 			<item value="/Users/tedd/Desktop/P3T1755_demo_on_FRDM_MCX_boards_v0.16.3.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.16.3.zip"/>
 			<item value="/Users/tedd/Desktop/AN_unified_workspace_base.zip"/>
