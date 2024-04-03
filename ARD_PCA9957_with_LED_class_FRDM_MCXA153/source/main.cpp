@@ -25,7 +25,7 @@ LED		leds[]	= {
 		LED( ledd, 20 ), LED( ledd, 21 ), LED( ledd, 22 ), LED( ledd, 23 )
 };
 
-int main(void)
+int main( void )
 {
 	PRINTF("***** Hello, PCA9957! *****\r\n");
 	ledd.begin( 1.0, PCA9957::ARDUINO_SHIELD );

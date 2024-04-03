@@ -14,7 +14,7 @@ P3T1755		p3t1755( i3c, P3T1755_ADDR_I2C );
 
 void	DAA_set_dynamic_ddress_from_static_ddress( uint8_t static_address, uint8_t dynamic_address );
 
-int main(void)
+int main( void )
 {
 	PRINTF("P3T1755 (Temperature sensor) I3C operation sample: getting temperature data\r\n");
 

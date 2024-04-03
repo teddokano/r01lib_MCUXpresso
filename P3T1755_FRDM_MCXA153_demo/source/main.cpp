@@ -22,7 +22,7 @@ DigitalOut	trig( D2    );	//	IBI detection trigger output for oscilloscope
 
 void	DAA_set_dynamic_ddress_from_static_ddress( uint8_t static_address, uint8_t dynamic_address );
 
-int main(void)
+int main( void )
 {
 	init_pin_control();
 	i3c.set_IBI_callback( ibi_trigger_output );

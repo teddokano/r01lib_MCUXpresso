@@ -11,7 +11,7 @@
 SPI			spi( D11, D12, D13, D10 );	//	MOSI, MISO, SCLK, CS
 PCA9957		ledd( spi );
 
-int main(void)
+int main( void )
 {
 	PRINTF("***** Hello, PCA9957! *****\r\n");
 

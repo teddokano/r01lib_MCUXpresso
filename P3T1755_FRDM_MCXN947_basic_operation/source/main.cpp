@@ -15,7 +15,7 @@ uint8_t				w_data[]	= { 0 };
 uint8_t				r_data[ 2 ];
 
 
-int main(void)
+int main( void )
 {
 	printf( "P3T1755 basic operation sample\r\n");
 

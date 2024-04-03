@@ -16,7 +16,7 @@ constexpr uint8_t	LEDOUT0		= 0x08;
 constexpr uint8_t	IREFALL		= 0x6B;
 constexpr uint8_t	PWM0_reg	= 0x10;
 
-int main(void)
+int main( void )
 {
 	uint8_t	w_data[]	= {
 			(LEDOUT0 + 0) << 1, 0xAA,

@@ -9,7 +9,7 @@
 
 SPI			spi( D11, D12, D13, D10 );	//	MOSI, MISO, SCLK, CS
 
-int main(void)
+int main( void )
 {
 	spi.frequency( 2000000 );
 	spi.mode( 0 );

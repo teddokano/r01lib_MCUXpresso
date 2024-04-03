@@ -31,7 +31,7 @@ void pin_int_callbackB() {
 void	int_cause_monitor( uint8_t* status );
 void	set_time( void );
 
-int main(void)
+int main( void )
 {
 	printf( "***** Hello, PCF2131! (%s interface) *****\r\n", intf_str );
 

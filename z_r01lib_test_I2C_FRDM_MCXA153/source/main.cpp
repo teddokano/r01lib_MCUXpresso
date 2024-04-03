@@ -9,7 +9,7 @@
 
 I2C		i2c( I2C_SDA, I2C_SCL );
 
-int main(void)
+int main( void )
 {
 	PRINTF( "I2C output is available on D18/SDA and D19/SCL.\r\n" );
 	PRINTF( "Pull-up resisters are required to connect I2C target(s)\r\n" );

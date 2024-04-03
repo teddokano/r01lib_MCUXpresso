@@ -16,7 +16,7 @@ const char	*intf_str	= "SPI";
 
 void	set_time( void );
 
-int main(void)
+int main( void )
 {
 	printf( "***** Hello, PCF2131! (%s interface) *****\r\n", intf_str );
 

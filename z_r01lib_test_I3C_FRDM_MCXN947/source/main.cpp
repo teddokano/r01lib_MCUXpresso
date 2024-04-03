@@ -15,7 +15,7 @@ uint8_t				w_data[]	= { 0 };
 uint8_t				r_data[ 2 ];
 
 
-int main(void)
+int main( void )
 {
 	printf( "r01lib I3C test\r\n");
 

@@ -15,7 +15,7 @@ void callback( void )
 	led	= !led;
 }
 
-int main(void)
+int main( void )
 {
 	PRINTF( "Check LED is blinking\r\n" );
 	t.attach( callback, 0.1 );
