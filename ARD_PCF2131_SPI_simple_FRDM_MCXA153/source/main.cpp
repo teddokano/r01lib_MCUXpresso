@@ -10,8 +10,8 @@
 #include	"rtc/tzcode/strptime.h"
 #include	<time.h>
 
-I2C			i2c( I2C_SDA, I2C_SCL );	//	SDA, SCL
-PCF2131		rtc( i2c );
+SPI			spi( D11, D12, D13, D10 );	//	MOSI, MISO, SCLK, CS
+PCF2131		rtc( spi );
 
 void	set_time( void );
 
