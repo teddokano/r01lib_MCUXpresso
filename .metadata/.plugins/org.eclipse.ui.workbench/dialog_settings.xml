@@ -4,6 +4,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/r01projects_v0.18.0.zip"/>
 			<item value="/Users/tedd/Desktop/PCF2131_SPI.zip"/>
 			<item value="/Users/tedd/Desktop/9722.zip"/>
 			<item value="/Users/tedd/Desktop/test.zip"/>
