@@ -79,12 +79,13 @@ var searchData=
   ['direct_5frstact_76',['DIRECT_RSTACT',['../i3c_8h.html#acba81d13b8fe4dc120a844ff5fb37321af529da4c364e90d1c334725d2ee5cf0c',1,'i3c.h']]],
   ['direct_5fsetdasa_77',['DIRECT_SETDASA',['../i3c_8h.html#acba81d13b8fe4dc120a844ff5fb37321a5c437f0b0e13188b7a656254dfe399dd',1,'i3c.h']]],
   ['direct_5fsetnewda_78',['DIRECT_SETNEWDA',['../i3c_8h.html#acba81d13b8fe4dc120a844ff5fb37321abd8898a2dd4ff63c7f6473e4ff21a1c3',1,'i3c.h']]],
-  ['disable_79',['DISABLE',['../class_p_c_f2131.html#afb07387c482fa41981cf77fe11bec637a706869d5e81430ac5db17a2a172e40e4',1,'PCF2131::DISABLE'],['../class_p_c_f85263_a.html#ada70b814df16b266ea08c9cb30804396a1c5340d74ab6f8a49b25c6eb4cbfde96',1,'PCF85263A::DISABLE']]],
-  ['disabled_5fgpio_80',['DISABLED_GPIO',['../io_8h.html#a558ea429228d4d91c2ca448f9653102b',1,'io.h']]],
-  ['disabled_5fpin_81',['DISABLED_PIN',['../io_8h.html#ac1ce626a969ca4e6c05c76611217dd92',1,'io.h']]],
-  ['display_5fctrl_5f1_82',['Display_ctrl_1',['../class_p_c_a8561.html#a1f1e6911093f3dc92a7cb0b45d5355b2a08e5eeef81c7e501809fc5ae36a4c397',1,'PCA8561']]],
-  ['display_5fctrl_5f2_83',['Display_ctrl_2',['../class_p_c_a8561.html#a1f1e6911093f3dc92a7cb0b45d5355b2a888309c6fa781cb894d46715326a9bd4',1,'PCA8561']]],
-  ['document_84',['API document',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]],
-  ['drive_5fstrength_85',['DRIVE_STRENGTH',['../_g_p_i_o___n_x_p_8h.html#a2d5783d2dc241118f8bccb9069911207aed43e1680485fddd2bedf530632f1b9a',1,'GPIO_NXP.h']]],
-  ['dummy_86',['DUMMY',['../class_gradation_control.html#aaa9f0a75203764f128858991301bf099a7166acbcf1d231b3f505ab4faea5c98d',1,'GradationControl']]]
+  ['direction_79',['direction',['../class_bus_in_out.html#a55cd6d430f2c6c81ce6ad6d8396d3ea5',1,'BusInOut::direction'],['../class_digital_in_out.html#a6042e4468e550347265bda8db2325be4',1,'DigitalInOut::direction'],['../class_digital_in_out.html#a1d3cba5d308078cf510100e8085b91f0',1,'DigitalInOut::direction(bool dir)']]],
+  ['disable_80',['DISABLE',['../class_p_c_f2131.html#afb07387c482fa41981cf77fe11bec637a706869d5e81430ac5db17a2a172e40e4',1,'PCF2131::DISABLE'],['../class_p_c_f85263_a.html#ada70b814df16b266ea08c9cb30804396a1c5340d74ab6f8a49b25c6eb4cbfde96',1,'PCF85263A::DISABLE']]],
+  ['disabled_5fgpio_81',['DISABLED_GPIO',['../io_8h.html#a558ea429228d4d91c2ca448f9653102b',1,'io.h']]],
+  ['disabled_5fpin_82',['DISABLED_PIN',['../io_8h.html#ac1ce626a969ca4e6c05c76611217dd92',1,'io.h']]],
+  ['display_5fctrl_5f1_83',['Display_ctrl_1',['../class_p_c_a8561.html#a1f1e6911093f3dc92a7cb0b45d5355b2a08e5eeef81c7e501809fc5ae36a4c397',1,'PCA8561']]],
+  ['display_5fctrl_5f2_84',['Display_ctrl_2',['../class_p_c_a8561.html#a1f1e6911093f3dc92a7cb0b45d5355b2a888309c6fa781cb894d46715326a9bd4',1,'PCA8561']]],
+  ['document_85',['API document',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]],
+  ['drive_5fstrength_86',['DRIVE_STRENGTH',['../_g_p_i_o___n_x_p_8h.html#a2d5783d2dc241118f8bccb9069911207aed43e1680485fddd2bedf530632f1b9a',1,'GPIO_NXP.h']]],
+  ['dummy_87',['DUMMY',['../class_gradation_control.html#aaa9f0a75203764f128858991301bf099a7166acbcf1d231b3f505ab4faea5c98d',1,'GradationControl']]]
 ];

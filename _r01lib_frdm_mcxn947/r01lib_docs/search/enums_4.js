@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inta_0',['inta',['../class_p_c_f85263_a.html#a8cd044df48a2001ac2514e5a2dd8dad6',1,'PCF85263A']]],
-  ['intb_1',['intb',['../class_p_c_f85263_a.html#a1816caad9f3a66240bd899c2a2d6d2ae',1,'PCF85263A']]]
+  ['freq_0',['FREQ',['../class_i2_c.html#aa009bd9217f2fe39b32a96aa68125edd',1,'I2C::FREQ'],['../class_i3_c.html#ac4c6baa4f489f1a470b86ad579fb0107',1,'I3C::FREQ']]]
 ];

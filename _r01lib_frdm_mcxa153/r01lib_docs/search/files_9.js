@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['test_5flm75b_2ecpp_0',['test_LM75B.cpp',['../test___l_m75_b_8cpp.html',1,'']]],
-  ['test_5flm75b_2eh_1',['test_LM75B.h',['../test___l_m75_b_8h.html',1,'']]],
-  ['ticker_2ecpp_2',['Ticker.cpp',['../_ticker_8cpp.html',1,'']]],
-  ['ticker_2eh_3',['Ticker.h',['../_ticker_8h.html',1,'']]]
+  ['semihost_5fhardfault_2ec_0',['semihost_hardfault.c',['../semihost__hardfault_8c.html',1,'']]],
+  ['spi_2ecpp_1',['spi.cpp',['../spi_8cpp.html',1,'']]],
+  ['spi_2eh_2',['spi.h',['../spi_8h.html',1,'']]],
+  ['spi_5ffor_5frtc_2ecpp_3',['SPI_for_RTC.cpp',['../_s_p_i__for___r_t_c_8cpp.html',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['misc_0',['MISC',['../class_i3_c.html#a2fe3725df0ba7782c7b1d9059c75ff17',1,'I3C']]],
-  ['mode_1',['MODE',['../class_i3_c.html#a90bae46fc3e240503e1384f4a2a324a8',1,'I3C']]],
-  ['mode_2',['mode',['../classtest___l_m75_b.html#aee2753cd76e582c42cad5c415898bb99',1,'test_LM75B']]]
+  ['inta_0',['inta',['../class_p_c_f85263_a.html#a8cd044df48a2001ac2514e5a2dd8dad6',1,'PCF85263A']]],
+  ['intb_1',['intb',['../class_p_c_f85263_a.html#a1816caad9f3a66240bd899c2a2d6d2ae',1,'PCF85263A']]]
 ];

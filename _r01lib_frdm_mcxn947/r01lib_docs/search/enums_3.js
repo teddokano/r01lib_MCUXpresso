@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['freq_0',['FREQ',['../class_i2_c.html#aa009bd9217f2fe39b32a96aa68125edd',1,'I2C::FREQ'],['../class_i3_c.html#ac4c6baa4f489f1a470b86ad579fb0107',1,'I3C::FREQ']]]
+  ['direction_0',['direction',['../class_bus_in_out.html#a55cd6d430f2c6c81ce6ad6d8396d3ea5',1,'BusInOut::direction'],['../class_digital_in_out.html#a6042e4468e550347265bda8db2325be4',1,'DigitalInOut::direction']]]
 ];

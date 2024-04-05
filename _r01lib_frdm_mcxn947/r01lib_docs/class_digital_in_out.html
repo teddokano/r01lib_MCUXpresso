@@ -73,7 +73,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_digital_in_out-members.html">List of all members</a>  </div>
@@ -95,9 +97,16 @@ Inheritance diagram for DigitalInOut:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6042e4468e550347265bda8db2325be4" id="r_a6042e4468e550347265bda8db2325be4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6042e4468e550347265bda8db2325be4">direction</a> { <a class="el" href="#a6042e4468e550347265bda8db2325be4a0225c92c4cb1366066e9c456022ff453">INPUT</a> = kGPIO_DigitalInput
+, <a class="el" href="#a6042e4468e550347265bda8db2325be4a703c4f934619ea7ff966f011771439c2">OUTPUT</a> = kGPIO_DigitalOutput
+ }</td></tr>
+<tr class="separator:a6042e4468e550347265bda8db2325be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae25aa13241a7fb1285a036aeea11e21a" id="r_ae25aa13241a7fb1285a036aeea11e21a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae25aa13241a7fb1285a036aeea11e21a">DigitalInOut</a> (uint8_t pin_num, bool direction=kGPIO_DigitalInput, bool <a class="el" href="#a76be5769a0ae1e0ca854213ddca005a4">value</a>=0)</td></tr>
+<tr class="memitem:ae25aa13241a7fb1285a036aeea11e21a" id="r_ae25aa13241a7fb1285a036aeea11e21a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae25aa13241a7fb1285a036aeea11e21a">DigitalInOut</a> (uint8_t pin_num, bool <a class="el" href="#a6042e4468e550347265bda8db2325be4">direction</a>=kGPIO_DigitalInput, bool <a class="el" href="#a76be5769a0ae1e0ca854213ddca005a4">value</a>=0)</td></tr>
 <tr class="separator:ae25aa13241a7fb1285a036aeea11e21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1c5fd9230fd5f502945df89017bb1e1" id="r_ad1c5fd9230fd5f502945df89017bb1e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1c5fd9230fd5f502945df89017bb1e1">~DigitalInOut</a> ()</td></tr>
 <tr class="separator:ad1c5fd9230fd5f502945df89017bb1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +132,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a71f4773f4d79208c5bce501f05659425 inherit pub_methods_class_obj" id="r_a71f4773f4d79208c5bce501f05659425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obj.html#a71f4773f4d79208c5bce501f05659425">~Obj</a> ()</td></tr>
 <tr class="separator:a71f4773f4d79208c5bce501f05659425 inherit pub_methods_class_obj"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1d3cba5d308078cf510100e8085b91f0" id="r_a1d3cba5d308078cf510100e8085b91f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d3cba5d308078cf510100e8085b91f0">direction</a> (bool dir)</td></tr>
+<tr class="separator:a1d3cba5d308078cf510100e8085b91f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:af5882a5caf483c4f66647e2285634e37" id="r_af5882a5caf483c4f66647e2285634e37"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5882a5caf483c4f66647e2285634e37">_pn</a></td></tr>
@@ -146,7 +160,28 @@ Private Attributes</h2></td></tr>
 <p>A class for operating GPIO easy </p>
 
 <p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00222">222</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a6042e4468e550347265bda8db2325be4" name="a6042e4468e550347265bda8db2325be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6042e4468e550347265bda8db2325be4">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6042e4468e550347265bda8db2325be4">DigitalInOut::direction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6042e4468e550347265bda8db2325be4a0225c92c4cb1366066e9c456022ff453" name="a6042e4468e550347265bda8db2325be4a0225c92c4cb1366066e9c456022ff453"></a>INPUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6042e4468e550347265bda8db2325be4a703c4f934619ea7ff966f011771439c2" name="a6042e4468e550347265bda8db2325be4a703c4f934619ea7ff966f011771439c2"></a>OUTPUT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00225">225</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae25aa13241a7fb1285a036aeea11e21a" name="ae25aa13241a7fb1285a036aeea11e21a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae25aa13241a7fb1285a036aeea11e21a">&#9670;&#160;</a></span>DigitalInOut()</h2>
 
@@ -182,7 +217,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00069">69</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="io_8h_source.html#l00272">_pn</a>, <a class="el" href="io_8h_source.html#l00279">_value</a>, <a class="el" href="io_8cpp_source.html#l00019">_gpio_pin::base</a>, <a class="el" href="io_8h_source.html#l00273">gpio_n</a>, <a class="el" href="io_8cpp_source.html#l00015">gpio_type</a>, <a class="el" href="io_8cpp_source.html#l00020">_gpio_pin::pin</a>, <a class="el" href="io_8cpp_source.html#l00023">pins</a>, <a class="el" href="io_8h_source.html#l00274">port_n</a>, <a class="el" href="io_8cpp_source.html#l00016">port_type</a>, and <a class="el" href="io_8cpp_source.html#l00098">value()</a>.</p>
+<p class="reference">References <a class="el" href="io_8h_source.html#l00278">_pn</a>, <a class="el" href="io_8h_source.html#l00285">_value</a>, <a class="el" href="io_8cpp_source.html#l00019">_gpio_pin::base</a>, <a class="el" href="io_8h_source.html#l00279">gpio_n</a>, <a class="el" href="io_8cpp_source.html#l00015">gpio_type</a>, <a class="el" href="io_8cpp_source.html#l00020">_gpio_pin::pin</a>, <a class="el" href="io_8cpp_source.html#l00023">pins</a>, <a class="el" href="io_8h_source.html#l00280">port_n</a>, <a class="el" href="io_8cpp_source.html#l00016">port_type</a>, and <a class="el" href="io_8cpp_source.html#l00098">value()</a>.</p>
 
 </div>
 </div>
@@ -207,6 +242,35 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1d3cba5d308078cf510100e8085b91f0" name="a1d3cba5d308078cf510100e8085b91f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3cba5d308078cf510100e8085b91f0">&#9670;&#160;</a></span>direction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="#a6042e4468e550347265bda8db2325be4">DigitalInOut::direction</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>dir</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00121">121</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="io_8h_source.html#l00285">_value</a>, and <a class="el" href="io_8h_source.html#l00279">gpio_n</a>.</p>
+
+</div>
+</div>
 <a id="a44ed72d16af2f1113d621e54cff5302e" name="a44ed72d16af2f1113d621e54cff5302e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ed72d16af2f1113d621e54cff5302e">&#9670;&#160;</a></span>input()</h2>
 
@@ -223,9 +287,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pin direction to set as in </p>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00114">114</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00115">115</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="io_8h_source.html#l00278">_dir</a>.</p>
+<p class="reference">References <a class="el" href="io_8h_source.html#l00284">_dir</a>, and <a class="el" href="io_8h_source.html#l00226">INPUT</a>.</p>
 
 </div>
 </div>
@@ -245,7 +309,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A short hand for reading pins </p>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00135">135</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00143">143</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +329,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A short hand for setting pins </p>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00124">124</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00132">132</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="io_8cpp_source.html#l00098">value()</a>.</p>
 
@@ -286,7 +350,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00130">130</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00138">138</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +372,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00109">109</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="io_8h_source.html#l00278">_dir</a>.</p>
+<p class="reference">References <a class="el" href="io_8h_source.html#l00284">_dir</a>, and <a class="el" href="io_8h_source.html#l00227">OUTPUT</a>.</p>
 
 </div>
 </div>
@@ -328,9 +392,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pin mux setting This interface is provided to other class drivers to change pin config dynamically </p>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00119">119</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00127">127</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="io_8h_source.html#l00274">port_n</a>.</p>
+<p class="reference">References <a class="el" href="io_8h_source.html#l00280">port_n</a>.</p>
 
 </div>
 </div>
@@ -358,7 +422,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00087">87</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="io_8h_source.html#l00278">_dir</a>, <a class="el" href="io_8h_source.html#l00272">_pn</a>, <a class="el" href="io_8h_source.html#l00279">_value</a>, <a class="el" href="io_8h_source.html#l00273">gpio_n</a>, <a class="el" href="io_8cpp_source.html#l00023">pins</a>, and <a class="el" href="io_8cpp_source.html#l00098">value()</a>.</p>
+<p class="reference">References <a class="el" href="io_8h_source.html#l00284">_dir</a>, <a class="el" href="io_8h_source.html#l00278">_pn</a>, <a class="el" href="io_8h_source.html#l00285">_value</a>, <a class="el" href="io_8h_source.html#l00279">gpio_n</a>, <a class="el" href="io_8cpp_source.html#l00023">pins</a>, and <a class="el" href="io_8cpp_source.html#l00098">value()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +445,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00098">98</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="io_8h_source.html#l00278">_dir</a>, <a class="el" href="io_8h_source.html#l00272">_pn</a>, <a class="el" href="io_8h_source.html#l00279">_value</a>, <a class="el" href="io_8h_source.html#l00273">gpio_n</a>, and <a class="el" href="io_8cpp_source.html#l00023">pins</a>.</p>
+<p class="reference">References <a class="el" href="io_8h_source.html#l00284">_dir</a>, <a class="el" href="io_8h_source.html#l00278">_pn</a>, <a class="el" href="io_8h_source.html#l00285">_value</a>, <a class="el" href="io_8h_source.html#l00279">gpio_n</a>, and <a class="el" href="io_8cpp_source.html#l00023">pins</a>.</p>
 
 </div>
 </div>
@@ -406,7 +470,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00278">278</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00284">284</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +494,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00272">272</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00278">278</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +518,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00279">279</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00285">285</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +542,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00273">273</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00279">279</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +566,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00275">275</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00281">281</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +590,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00274">274</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00280">280</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
