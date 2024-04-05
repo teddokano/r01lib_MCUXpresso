@@ -7,7 +7,7 @@
 
 #include	"r01lib.h"
 
-DigitalOut	led( BLUE );
+DigitalOut	led( D18 );
 
 int main( void )
 {
@@ -16,6 +16,6 @@ int main( void )
 	while ( true )
 	{
 		led	= !led;
-		wait( 0.5 );
+//		wait( 0.5 );
 	}
 }

@@ -6,19 +6,18 @@
  */
 
 #include	"r01lib.h"
-#include	"rtc/PCF2131_SPI.h"
+#include	"rtc/PCF2131.h"
 #include	"rtc/tzcode/strptime.h"
 #include	<time.h>
 
-SPI			spi( D11, D12, D13, D10 );	//	MOSI, MISO, SCLK, CS
-PCF2131_SPI	rtc( spi );
-const char	*intf_str	= "SPI";
+I2C			i2c( I2C_SDA, I2C_SCL );	//	SDA, SCL
+PCF2131		rtc( i2c );
 
 void	set_time( void );
 
 int main( void )
 {
-	printf( "***** Hello, PCF2131! (%s interface) *****\r\n", intf_str );
+	printf( "***** Hello, PCF2131! (SPI interface) *****\r\n" );
 
 	if ( rtc.oscillator_stop() )
 	{
@@ -42,7 +41,7 @@ int main( void )
 }
 
 void set_time( void ) {
-	const char* current_time	= "2024-4-1 10:41:30";
+	const char* current_time	= "2024-4-5 6:58:30";
 	const char* format			= "%Y-%m-%d %H:%M:%S";
 	struct tm	now_tm;
 

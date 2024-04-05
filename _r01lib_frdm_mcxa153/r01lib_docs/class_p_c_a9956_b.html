@@ -92,6 +92,7 @@ Inheritance diagram for PCA9956B:</div>
 <area href="class_p_c_a995x.html" alt="PCA995x" shape="rect" coords="0,56,91,80"/>
 <area href="class_i2_c__device.html" alt="I2C_device" shape="rect" coords="101,56,192,80"/>
 <area href="class_l_e_d_driver.html" alt="LEDDriver" shape="rect" coords="0,0,91,24"/>
+<area href="class_serial__device.html" alt="Serial_device" shape="rect" coords="101,0,192,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -271,7 +272,7 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_i2_c__device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i2_c__device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i2_c__device.html">I2C_device</a></td></tr>
 <tr class="memitem:a4300a6e559f01b097dacd5808c0f2db6 inherit pub_methods_class_i2_c__device" id="r_a4300a6e559f01b097dacd5808c0f2db6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a4300a6e559f01b097dacd5808c0f2db6">I2C_device</a> (<a class="el" href="class_i2_c.html">I2C</a> &amp;interface, uint8_t i2c_address, bool <a class="el" href="class_i2_c__device.html#aa7e393f9d636f9703047a96761828ade">repeated_start_enable</a>=true)</td></tr>
 <tr class="separator:a4300a6e559f01b097dacd5808c0f2db6 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23440498d7cd7cec7784dcda5ed77ef0 inherit pub_methods_class_i2_c__device" id="r_a23440498d7cd7cec7784dcda5ed77ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a23440498d7cd7cec7784dcda5ed77ef0">~I2C_device</a> ()</td></tr>
+<tr class="memitem:a23440498d7cd7cec7784dcda5ed77ef0 inherit pub_methods_class_i2_c__device" id="r_a23440498d7cd7cec7784dcda5ed77ef0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a23440498d7cd7cec7784dcda5ed77ef0">~I2C_device</a> ()</td></tr>
 <tr class="separator:a23440498d7cd7cec7784dcda5ed77ef0 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e393f9d636f9703047a96761828ade inherit pub_methods_class_i2_c__device" id="r_aa7e393f9d636f9703047a96761828ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#aa7e393f9d636f9703047a96761828ade">repeated_start_enable</a> (bool en=true)</td></tr>
 <tr class="separator:aa7e393f9d636f9703047a96761828ade inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,24 +284,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a371e31074e312ef7718ce71708f265c3 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6217e349b8f70ecfb7a75435b8694f inherit pub_methods_class_i2_c__device" id="r_a5b6217e349b8f70ecfb7a75435b8694f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a5b6217e349b8f70ecfb7a75435b8694f">reg_w</a> (uint8_t reg_adr, const uint8_t *data, uint16_t size)</td></tr>
 <tr class="separator:a5b6217e349b8f70ecfb7a75435b8694f inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e502bad7038b7d534140931d0ccc27 inherit pub_methods_class_i2_c__device" id="r_a76e502bad7038b7d534140931d0ccc27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a76e502bad7038b7d534140931d0ccc27">reg_w</a> (uint8_t reg_adr, uint8_t data)</td></tr>
-<tr class="separator:a76e502bad7038b7d534140931d0ccc27 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf224bbce4f0c28a11b2b1355f36ca9 inherit pub_methods_class_i2_c__device" id="r_aacf224bbce4f0c28a11b2b1355f36ca9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#aacf224bbce4f0c28a11b2b1355f36ca9">reg_r</a> (uint8_t reg_adr, uint8_t *data, uint16_t size)</td></tr>
-<tr class="separator:aacf224bbce4f0c28a11b2b1355f36ca9 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8380ce4dd6211b4cc7d5e48bdb473854 inherit pub_methods_class_i2_c__device" id="r_a8380ce4dd6211b4cc7d5e48bdb473854"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a8380ce4dd6211b4cc7d5e48bdb473854">reg_r</a> (uint8_t reg_adr)</td></tr>
-<tr class="separator:a8380ce4dd6211b4cc7d5e48bdb473854 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f69560e9cb2d8ec33f2f5f8d497a34e inherit pub_methods_class_i2_c__device" id="r_a5f69560e9cb2d8ec33f2f5f8d497a34e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a5f69560e9cb2d8ec33f2f5f8d497a34e">write_r8</a> (uint8_t reg, uint8_t val)</td></tr>
-<tr class="separator:a5f69560e9cb2d8ec33f2f5f8d497a34e inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7db320551353b8d860221dc646f3989 inherit pub_methods_class_i2_c__device" id="r_aa7db320551353b8d860221dc646f3989"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#aa7db320551353b8d860221dc646f3989">write_r16</a> (uint8_t reg, uint16_t val)</td></tr>
 <tr class="separator:aa7db320551353b8d860221dc646f3989 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422a498c526852b38836a6313e14e371 inherit pub_methods_class_i2_c__device" id="r_a422a498c526852b38836a6313e14e371"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a422a498c526852b38836a6313e14e371">read_r8</a> (uint8_t reg)</td></tr>
-<tr class="separator:a422a498c526852b38836a6313e14e371 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aa5aff32f1484d2282decfa0307c38d inherit pub_methods_class_i2_c__device" id="r_a9aa5aff32f1484d2282decfa0307c38d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a9aa5aff32f1484d2282decfa0307c38d">read_r16</a> (uint8_t reg)</td></tr>
 <tr class="separator:a9aa5aff32f1484d2282decfa0307c38d inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758abf4ad6fdca6d32c06ab7780b13b5 inherit pub_methods_class_i2_c__device" id="r_a758abf4ad6fdca6d32c06ab7780b13b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#a758abf4ad6fdca6d32c06ab7780b13b5">bit_op8</a> (uint8_t reg, uint8_t mask, uint8_t value)</td></tr>
-<tr class="separator:a758abf4ad6fdca6d32c06ab7780b13b5 inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd030d701ee101dbf359c05eddab50cf inherit pub_methods_class_i2_c__device" id="r_abd030d701ee101dbf359c05eddab50cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c__device.html#abd030d701ee101dbf359c05eddab50cf">bit_op16</a> (uint8_t reg, uint16_t mask, uint16_t value)</td></tr>
-<tr class="separator:abd030d701ee101dbf359c05eddab50cf inherit pub_methods_class_i2_c__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_serial__device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_serial__device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_serial__device.html">Serial_device</a></td></tr>
+<tr class="memitem:a8a649a149fa3ffddb621905deb0d8f8a inherit pub_methods_class_serial__device" id="r_a8a649a149fa3ffddb621905deb0d8f8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial__device.html#a8a649a149fa3ffddb621905deb0d8f8a">Serial_device</a> ()</td></tr>
+<tr class="separator:a8a649a149fa3ffddb621905deb0d8f8a inherit pub_methods_class_serial__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccdd43e316c77fad4d9b6117f67bf28 inherit pub_methods_class_serial__device" id="r_a5ccdd43e316c77fad4d9b6117f67bf28"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial__device.html#a5ccdd43e316c77fad4d9b6117f67bf28">~Serial_device</a> ()</td></tr>
+<tr class="separator:a5ccdd43e316c77fad4d9b6117f67bf28 inherit pub_methods_class_serial__device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -549,6 +541,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PCA9956B::bit_op16 </td>
@@ -566,7 +561,14 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#abd030d701ee101dbf359c05eddab50cf">I2C_device</a>.</p>
 
 </div>
 </div>
@@ -575,6 +577,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PCA9956B::bit_op8 </td>
@@ -592,6 +597,11 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Register overwriting with bit-mask</p>
 <p>Register can be updated by bit level</p>
@@ -603,6 +613,8 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#a758abf4ad6fdca6d32c06ab7780b13b5">I2C_device</a>.</p>
 
 </div>
 </div>
@@ -746,6 +758,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint8_t PCA9956B::read_r8 </td>
@@ -754,6 +769,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Register read, 8 bit</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -764,6 +784,8 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>data value </dd></dl>
 
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#a422a498c526852b38836a6313e14e371">I2C_device</a>.</p>
+
 </div>
 </div>
 <a id="aca49805d5b88327a476bea2fdc5b7837" name="aca49805d5b88327a476bea2fdc5b7837"></a>
@@ -771,6 +793,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint8_t PCA9956B::reg_r </td>
@@ -779,6 +804,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Single register read</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -789,6 +819,8 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>read data </dd></dl>
 
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#a8380ce4dd6211b4cc7d5e48bdb473854">I2C_device</a>.</p>
+
 </div>
 </div>
 <a id="ab0102aa4d1d93b1f6063a796053a6d36" name="ab0102aa4d1d93b1f6063a796053a6d36"></a>
@@ -796,6 +828,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int PCA9956B::reg_r </td>
@@ -813,6 +848,11 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Multiple register read</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -824,6 +864,8 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>transferred data size </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#aacf224bbce4f0c28a11b2b1355f36ca9">I2C_device</a>.</p>
 
 </div>
 </div>
@@ -868,6 +910,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int PCA9956B::reg_w </td>
@@ -880,6 +925,11 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Single register write</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -892,6 +942,8 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>transferred data size </dd></dl>
 
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#a76e502bad7038b7d534140931d0ccc27">I2C_device</a>.</p>
+
 </div>
 </div>
 <a id="a978782fc5bbbc9dea8dcde9165f62a4f" name="a978782fc5bbbc9dea8dcde9165f62a4f"></a>
@@ -899,6 +951,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PCA9956B::write_r8 </td>
@@ -911,6 +966,11 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>val</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Register write, 8 bit</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -920,6 +980,8 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented from <a class="el" href="class_i2_c__device.html#a5f69560e9cb2d8ec33f2f5f8d497a34e">I2C_device</a>.</p>
 
 </div>
 </div>
