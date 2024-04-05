@@ -38,7 +38,7 @@ var searchData=
   ['pcal6534_35',['PCAL6534',['../class_p_c_a_l6534.html',1,'PCAL6534'],['../class_p_c_a_l6534.html#ada2ad8187e9623e5e44ea47bdddb6650',1,'PCAL6534::PCAL6534()']]],
   ['pcal6534_2eh_36',['PCAL6534.h',['../_p_c_a_l6534_8h.html',1,'']]],
   ['pcal6xxx_5fbase_37',['PCAL6xxx_base',['../class_p_c_a_l6xxx__base.html',1,'PCAL6xxx_base'],['../class_p_c_a_l6xxx__base.html#a3a81f8bfba760a0630910ed894ecb0a1',1,'PCAL6xxx_base::PCAL6xxx_base()']]],
-  ['pcal9722_38',['PCAL9722',['../class_p_c_a_l9722.html',1,'PCAL9722'],['../class_p_c_a_l9722.html#a2e61ab7026c1c64276aa32c16ea826e4',1,'PCAL9722::PCAL9722()']]],
+  ['pcal9722_38',['PCAL9722',['../class_p_c_a_l9722.html',1,'PCAL9722'],['../class_p_c_a_l9722.html#a972e4d2abc4b58273529efc6d6217095',1,'PCAL9722::PCAL9722()']]],
   ['pcal9722_2eh_39',['PCAL9722.h',['../_p_c_a_l9722_8h.html',1,'']]],
   ['pcal97xx_5fbase_40',['PCAL97xx_base',['../class_p_c_a_l97xx__base.html',1,'PCAL97xx_base'],['../class_p_c_a_l97xx__base.html#a7abb24e99f5e274d010cb7270e23281d',1,'PCAL97xx_base::PCAL97xx_base()']]],
   ['pcf2131_41',['PCF2131',['../class_p_c_f2131.html',1,'PCF2131'],['../class_p_c_f2131.html#a6fdedfc33b9a93a56143e9feafd253e0',1,'PCF2131::PCF2131(I2C &amp;interface, uint8_t i2c_address=(0xA6 &gt; &gt; 1))'],['../class_p_c_f2131.html#ac609677514de89435f743f2585774725',1,'PCF2131::PCF2131(SPI &amp;interface)']]],

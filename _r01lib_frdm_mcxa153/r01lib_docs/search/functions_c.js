@@ -16,7 +16,7 @@ var searchData=
   ['pcal6524_13',['PCAL6524',['../class_p_c_a_l6524.html#a030af423ee81b43cf66a06b2d5da7ff3',1,'PCAL6524']]],
   ['pcal6534_14',['PCAL6534',['../class_p_c_a_l6534.html#ada2ad8187e9623e5e44ea47bdddb6650',1,'PCAL6534']]],
   ['pcal6xxx_5fbase_15',['PCAL6xxx_base',['../class_p_c_a_l6xxx__base.html#a3a81f8bfba760a0630910ed894ecb0a1',1,'PCAL6xxx_base']]],
-  ['pcal9722_16',['PCAL9722',['../class_p_c_a_l9722.html#a2e61ab7026c1c64276aa32c16ea826e4',1,'PCAL9722']]],
+  ['pcal9722_16',['PCAL9722',['../class_p_c_a_l9722.html#a972e4d2abc4b58273529efc6d6217095',1,'PCAL9722']]],
   ['pcal97xx_5fbase_17',['PCAL97xx_base',['../class_p_c_a_l97xx__base.html#a7abb24e99f5e274d010cb7270e23281d',1,'PCAL97xx_base']]],
   ['pcf2131_18',['PCF2131',['../class_p_c_f2131.html#a6fdedfc33b9a93a56143e9feafd253e0',1,'PCF2131::PCF2131(I2C &amp;interface, uint8_t i2c_address=(0xA6 &gt; &gt; 1))'],['../class_p_c_f2131.html#ac609677514de89435f743f2585774725',1,'PCF2131::PCF2131(SPI &amp;interface)']]],
   ['pcf85053a_19',['PCF85053A',['../class_p_c_f85053_a.html#a5939357792d87aed5e37c607f5727b30',1,'PCF85053A']]],
