@@ -4,6 +4,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/ref.zip"/>
+			<item value="/Users/tedd/Desktop/ARD_PCAL9722_demo_v0.19.0.zip"/>
+			<item value="/Users/tedd/Desktop/r01projects_v0.19.0.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.18.5.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.18.4__.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.18.4.zip"/>

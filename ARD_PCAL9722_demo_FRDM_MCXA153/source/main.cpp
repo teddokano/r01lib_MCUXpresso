@@ -12,6 +12,7 @@
 
 SPI			spi( D11, D12, D13, D10 );
 PCAL9722	gpio( spi );
+InterruptIn	int_pin( D7 );
 Ticker		t;
 bool		int_flag	= false;
 uint8_t		buttons		= 0x3F;
@@ -25,8 +26,6 @@ void	ticker_callback( void );
 
 int main( void )
 {
-	InterruptIn		int_pin( D7 );
-
 	printf( "***** Hello, PCAL9722! *****\r\n" );
 	gpio.begin( PCAL9722::ARDUINO_SHIELD );
 
@@ -41,6 +40,7 @@ int main( void )
 	gpio.write_port( PULL_UD_SEL, io_config_and_pull_up );	//  Pull-up selected for port2 bit 5~0
 
 	gpio.write_port( INT_MASK, (uint8_t)(~0x3F), 2 );		//  Interrupt mask cleared pn port2 bit 5~0
+	gpio.input( 2 );										//	Clear interrupt
 
 	int_pin.fall( button_callback );
 	t.attach( ticker_callback, 0.05 );
@@ -75,7 +75,7 @@ int main( void )
 void message( const char *s, float dulation, float blank )
 {
 	char c;
-	
+
 	while ( (c	= *s++) )
 	{
 		disp7seg( c );
@@ -94,13 +94,13 @@ void disp7seg( char c )
 			0xA3, 0x8C, 0x98, 0xAF, 0x92, 0x87, 0xE3, 0xC1,	//	O~V
 			0xE2, 0x9B, 0x91, 0xB6							//	W~Z
 	};
-	
+
 	if ( isdigit( c ) )
 		gpio.output( 1, patterns[ c - '0' ] );
 	else if ( isalpha( c ) )
 		gpio.output( 1, patterns[ tolower( c ) - 'a' + 10 ] );
 	else if ( '.' == c )
-		gpio.output( 1, 0x7F );		
+		gpio.output( 1, 0x7F );
 	else
 		gpio.output( 1, 0xFF );
 }
@@ -115,6 +115,8 @@ int button_display( uint8_t v )
 			return i;
 		}
 	}
+
+	return 0;
 }
 
 void button_callback( void )
@@ -148,12 +150,10 @@ void ticker_callback( void )
 	};
 	static int	count 		= 0;
 	static int	event_time	= 0;
-	static int	btn			= 0;
-
 
 	if ( 0x3F & ~buttons )
 	{
-		btn	= button_display( 0x3F & ~buttons );
+		button_display( 0x3F & ~buttons );
 		event_time	= count;
 	}
 	else
