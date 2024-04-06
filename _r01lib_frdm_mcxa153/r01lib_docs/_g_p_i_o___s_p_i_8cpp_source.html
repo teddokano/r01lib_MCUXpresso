@@ -104,8 +104,8 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    uint8_t w_data[ size + 2 ];</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    uint8_t r_data[ size + 2 ];</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    w_data[ 0 ] = <a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#a5a866754bdeddd862eb7c328c7873866">dev_addr</a> &lt;&lt; 1;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    w_data[ 1 ] = reg_adr;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    w_data[ 0 ] = (<a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#a5a866754bdeddd862eb7c328c7873866">dev_addr</a> &lt;&lt; 1);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    w_data[ 1 ] = reg_adr | <a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#aa32429f734d18f18f254ee408e630542">auto_increment</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    memcpy( w_data + 2, data, size );</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#a305bcda4446e6f569d55e7d9e65a76d6">spi</a>.<a class="code hl_function" href="class_s_p_i.html#a0d8aeac3e331a93b940e1fc65b7960f8">write</a>( w_data, r_data, size + 2 );</div>
@@ -137,7 +137,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    uint8_t r_data[ size + 2 ];</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    w_data[ 0 ] = (<a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#a5a866754bdeddd862eb7c328c7873866">dev_addr</a> &lt;&lt; 1) | 0x1;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    w_data[ 1 ] = reg_adr;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    w_data[ 1 ] = reg_adr | <a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#aa32429f734d18f18f254ee408e630542">auto_increment</a>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_variable" href="class_g_p_i_o___s_p_i.html#a305bcda4446e6f569d55e7d9e65a76d6">spi</a>.<a class="code hl_function" href="class_s_p_i.html#a0d8aeac3e331a93b940e1fc65b7960f8">write</a>( w_data, r_data, size + 2 );</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    </div>
@@ -235,6 +235,7 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclass_g_p_i_o___s_p_i_html_a7022bfc0b92eaeca29d47c525d6bbb11"><div class="ttname"><a href="class_g_p_i_o___s_p_i.html#a7022bfc0b92eaeca29d47c525d6bbb11">GPIO_SPI::write_r16</a></div><div class="ttdeci">void write_r16(uint8_t reg, uint16_t val)</div><div class="ttdef"><b>Definition</b> <a href="#l00073">GPIO_SPI.cpp:73</a></div></div>
 <div class="ttc" id="aclass_g_p_i_o___s_p_i_html_a9338e1678fd2f190d52b8970c38eaa55"><div class="ttname"><a href="class_g_p_i_o___s_p_i.html#a9338e1678fd2f190d52b8970c38eaa55">GPIO_SPI::~GPIO_SPI</a></div><div class="ttdeci">virtual ~GPIO_SPI()</div><div class="ttdef"><b>Definition</b> <a href="#l00007">GPIO_SPI.cpp:7</a></div></div>
 <div class="ttc" id="aclass_g_p_i_o___s_p_i_html_a95df11db847d754106e5d7dd9b61c934"><div class="ttname"><a href="class_g_p_i_o___s_p_i.html#a95df11db847d754106e5d7dd9b61c934">GPIO_SPI::read_r16</a></div><div class="ttdeci">uint16_t read_r16(uint8_t reg)</div><div class="ttdef"><b>Definition</b> <a href="#l00088">GPIO_SPI.cpp:88</a></div></div>
+<div class="ttc" id="aclass_g_p_i_o___s_p_i_html_aa32429f734d18f18f254ee408e630542"><div class="ttname"><a href="class_g_p_i_o___s_p_i.html#aa32429f734d18f18f254ee408e630542">GPIO_SPI::auto_increment</a></div><div class="ttdeci">static constexpr uint8_t auto_increment</div><div class="ttdef"><b>Definition</b> <a href="_g_p_i_o___s_p_i_8h_source.html#l00123">GPIO_SPI.h:123</a></div></div>
 <div class="ttc" id="aclass_g_p_i_o___s_p_i_html_aa568fef96c71cb099d142722624575d3"><div class="ttname"><a href="class_g_p_i_o___s_p_i.html#aa568fef96c71cb099d142722624575d3">GPIO_SPI::reg_w</a></div><div class="ttdeci">int reg_w(uint8_t reg_adr, const uint8_t *data, uint16_t size)</div><div class="ttdef"><b>Definition</b> <a href="#l00011">GPIO_SPI.cpp:11</a></div></div>
 <div class="ttc" id="aclass_g_p_i_o___s_p_i_html_afc7386c9515a77a85b49f687b787c3fc"><div class="ttname"><a href="class_g_p_i_o___s_p_i.html#afc7386c9515a77a85b49f687b787c3fc">GPIO_SPI::write_r8</a></div><div class="ttdeci">void write_r8(uint8_t reg, uint8_t val)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">GPIO_SPI.cpp:68</a></div></div>
 <div class="ttc" id="aclass_s_p_i_html"><div class="ttname"><a href="class_s_p_i.html">SPI</a></div><div class="ttdef"><b>Definition</b> <a href="spi_8h_source.html#l00027">spi.h:28</a></div></div>

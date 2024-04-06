@@ -13,6 +13,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCA9957_basic_operation_FRD
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCA9957_with_LED_class_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_demo_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_demo_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCF2131_I2C_interrupts_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCF2131_I2C_interrupts_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCF2131_I2C_simple_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
@@ -35,6 +37,7 @@ org.eclipse.launchbar.core.descriptorType.default\:ARD_PCA9957_with_LED_class_FR
 org.eclipse.launchbar.core.descriptorType.default\:ARD_PCA9957_with_LED_class_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:ARD_PCAL6534_interupt_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:ARD_PCAL6534_interupt_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:ARD_PCAL9722_demo_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:ARD_PCAL9722_demo_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:ARD_PCAL9722_demo_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:ARD_PCF2131_I2C_interrupts_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

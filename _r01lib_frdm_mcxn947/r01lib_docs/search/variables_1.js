@@ -4,5 +4,5 @@ var searchData=
   ['addr_5fpin_1',['ADDR_PIN',['../class_g_p_i_o__base.html#aba382c911388177dbf6089a77cf37707',1,'GPIO_base']]],
   ['alarm_5foffsets_2',['alarm_offsets',['../class_p_c_f85053_a.html#a55793635d943505a3c9c229ee91ceb72',1,'PCF85053A']]],
   ['arp_3',['arp',['../class_g_p_i_o__base.html#a995489eca6580d4e42aafb2e5f2d3807',1,'GPIO_base::arp'],['../class_p_c_a995x.html#a48a030032d08fe1a5eeb73d0ec199d16',1,'PCA995x::arp']]],
-  ['auto_5fincrement_4',['auto_increment',['../class_g_p_i_o__base.html#a5a88e1ac04df134ce9b22a685e1d3170',1,'GPIO_base']]]
+  ['auto_5fincrement_4',['auto_increment',['../class_g_p_i_o__base.html#a5a88e1ac04df134ce9b22a685e1d3170',1,'GPIO_base::auto_increment'],['../class_g_p_i_o___s_p_i.html#aa32429f734d18f18f254ee408e630542',1,'GPIO_SPI::auto_increment']]]
 ];
