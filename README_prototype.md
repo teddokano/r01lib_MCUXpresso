@@ -1,24 +1,25 @@
 # NXP Application Code Hub
 [<img src="https://mcuxpresso.nxp.com/static/icon/nxp-logo-color.svg" width="100"/>](https://www.nxp.com)
 
-## MIPI I3C bus demonstration using P3T1755 temperature sensor on FRDM-MCXN947/MCXA153
+## P3T1755: I3C temperature sensor demo
 
 - This example code demonstrates MIPI I3C bus operation with P3T1755 temperature sensor and MCX microcontroller.  
 <br />
 - MIPI I3C bus is a serial bus that performs high datarate data transfer with two wire signals. 
-The prptocol is similar to I²C but there are several extended features like Dynamic Address Assignment (DAA), In-band interrupt (IBI) etc. 
-This code shows those signal characterristics. 
-The MIPI I3C bus is introduced in a NXP document: [SYSTEM MANAGEMENT I²C, I3C AND SPI SELECTOR GUIDE](https://www.nxp.com/docs/en/product-selector-guide/I2CSELECTORBROC.pdf). 
+The prptocol is similar to I²C but there are several extended features like Dynamic Address Assignment (DAA), In-band interrupt (IBI) etc.  
+  - This code shows those features and signal characterristics.  
+  - The MIPI I3C bus is introduced in a NXP document: [SYSTEM MANAGEMENT I²C, I3C AND SPI SELECTOR GUIDE](https://www.nxp.com/docs/en/product-selector-guide/I2CSELECTORBROC.pdf). 
+<br />
+- As a target device of I3C, The P3T1755 is used. 
 <br />
 - The P3T1755 is a temperature-to-digital converter from -40 °C to +125 °C range. It uses an on-chip band gap temperature sensor and A-to-D conversion technique with
 an overtemperature detection. The device contains a number of configuration and data registers to store the device settings, such as device operation mode, and a temperature register (Temp) to store the digital temp reading that can be communicated by a controller via the 2-wire serial I3C (up to 12.5 MHz) and I2C (up to 3.4 MHz) interface. 
 For the details of the P3T1755, please refer to its [datasheet](https://www.nxp.com/docs/en/data-sheet/P3T1755.pdf)
 <br />
-- "r01lib" is a MCU abstraction library to write code easy and presenting operation of serial buses and GPIO pins. The APIs are inspired by Arm Mbed SDK. This library is distributed as a part of this example code. 
+- An MCU abstraction library: "r01lib" is used. It's a library to write demo code easy with presenting operations of serial buses and GPIO pins with simple APIs. Those APIs are inspired by Arm Mbed SDK. This library is distributed as a part of this example code. 
 <br />
 
-
-![block](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/block.png) 
+![block](https://github.com/teddokano/additional_files/blob/main/r01projects-p3t1755/block.png)
 
 **DEMO VIDEO LINK WILL BE HERE**
 **DEMO VIDEO LINK WILL BE HERE**
@@ -159,3 +160,6 @@ Questions regarding the content/correctness of this example can be entered as Is
 |:-------:|------------------------------------------------|----------------------------:|
 | 1.0     | Initial release on Application Code Hub        | Apr 17<sup>th</sup> 2024 |
 
+
+
+[def]: pics/block.png
