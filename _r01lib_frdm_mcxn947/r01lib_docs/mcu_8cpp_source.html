@@ -204,7 +204,7 @@ $(function() { codefold.init(0); });
 <div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="mcu_8cpp.html#ad3cdbe388204f1d2a626f695cf59ddbb">  110</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="mcu_8cpp.html#ad3cdbe388204f1d2a626f695cf59ddbb">panic</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *s )</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    printf( <span class="stringliteral">&quot;error: %s&quot;</span>, s );</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    PRINTF( <span class="stringliteral">&quot;error: %s&quot;</span>, s );</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">typedef</span> <span class="keyword">struct          </span>{ <span class="keywordtype">int</span> on; <span class="keywordtype">int</span> off; }    single_code_t;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">static</span> single_code_t    code[]  = { { 1, 1 }, { 1, 1 }, { 1, 3 }, { 3, 1 },  { 3, 1 }, { 3, 3 }, { 1, 1 }, { 1, 1 }, { 1, 7 } };</div>
