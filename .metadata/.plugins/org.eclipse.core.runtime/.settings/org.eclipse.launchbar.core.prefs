@@ -41,6 +41,7 @@ org.eclipse.launchbar.core.descriptorType.default\:AFE_basic_FRDM_MCXA153\ LinkS
 org.eclipse.launchbar.core.descriptorType.default\:AFE_basic_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:AFE_on_board_RTD_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:AFE_on_board_RTD_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:AFE_on_board_RTD_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:AFE_on_board_RTD_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:AFE_test_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:AFE_test_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

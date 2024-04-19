@@ -37,7 +37,7 @@ int main( void )
 	afe.logical_ch_config( LOGICAL_CHANNEL, 0xAA02, 0x0058, 0x2C80, 0x0000 );
 	logical_ch_config_view( LOGICAL_CHANNEL );
 
-	printf( "values in ratio\r\n" );
+	printf( "measured values\r\n" );
 
 	ADC_nDRDY.rise( callback_RDY );
 	
