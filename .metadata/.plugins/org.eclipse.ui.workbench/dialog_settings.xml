@@ -4,6 +4,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/afeb2.zip"/>
+			<item value="/Users/tedd/Desktop/p3t_153.zip"/>
+			<item value="/Users/tedd/Desktop/p3t.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.21.0.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.20.0.zip"/>
 			<item value="/Users/tedd/Desktop/afe_base.zip"/>
@@ -21,9 +24,6 @@
 			<item value="/Users/tedd/Desktop/r01projects_v0.18.1.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.18.0.zip"/>
 			<item value="/Users/tedd/Desktop/PCF2131_SPI.zip"/>
-			<item value="/Users/tedd/Desktop/9722.zip"/>
-			<item value="/Users/tedd/Desktop/test.zip"/>
-			<item value="/Users/tedd/Desktop/r01projects_v0.17.1.zip"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -31,5 +31,7 @@
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>
