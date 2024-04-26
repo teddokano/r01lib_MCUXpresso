@@ -72,8 +72,7 @@ void NAFE13388::logical_ch_config( int ch, uint16_t cc0, uint16_t cc1, uint16_t 
 
 double NAFE13388::read( int ch, float delay, bool raw )
 {
-	write_r16( ch );
-	write_r16( 0x2000 );
+	start( ch );
 	wait( delay );
 	
 	return read( ch, raw );
