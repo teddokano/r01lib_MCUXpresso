@@ -4,6 +4,11 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/IxC.zip"/>
+			<item value="/Users/tedd/Desktop/p3t.zip"/>
+			<item value="/Users/tedd/Desktop/r01.zip"/>
+			<item value="/Users/tedd/Desktop/p3tdemo.zip"/>
+			<item value="/Users/tedd/Desktop/daa.zip"/>
 			<item value="/Users/tedd/Desktop/afe.zip"/>
 			<item value="/Users/tedd/Desktop/uniq2.zip"/>
 			<item value="/Users/tedd/Desktop/uniq.zip"/>
@@ -13,17 +18,12 @@
 			<item value="/Users/tedd/Desktop/AFE_MCUXpresso_demo_20240419.zip"/>
 			<item value="/Users/tedd/Desktop/afeb2.zip"/>
 			<item value="/Users/tedd/Desktop/p3t_153.zip"/>
-			<item value="/Users/tedd/Desktop/p3t.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.21.0.zip"/>
 			<item value="/Users/tedd/Desktop/r01projects_v0.20.0.zip"/>
 			<item value="/Users/tedd/Desktop/afe_base.zip"/>
 			<item value="/Users/tedd/Desktop/demo_test.zip"/>
 			<item value="/Users/tedd/Desktop/ARD_PCAL9722_demo_test.zip"/>
 			<item value="/Users/tedd/Desktop/r01lib_samples_v0.19.1.zip"/>
-			<item value="/Users/tedd/Desktop/ARD_PCAL9722_demo_v0.19.1.zip"/>
-			<item value="/Users/tedd/Desktop/r01projects_v0.19.1.zip"/>
-			<item value="/Users/tedd/Desktop/ref.zip"/>
-			<item value="/Users/tedd/Desktop/ARD_PCAL9722_demo_v0.19.0.zip"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

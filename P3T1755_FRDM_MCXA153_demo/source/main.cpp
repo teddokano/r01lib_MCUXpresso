@@ -8,12 +8,11 @@
 #include	"r01lib.h"
 #include	"pin_control.h"
 #include	"temp_sensor/P3T1755.h"
-#include	<time.h>
 
 I3C		i3c( I3C_SDA, I3C_SCL );	//	SDA, SCL
 P3T1755	p3t1755( i3c, P3T1755_ADDR_I2C );
 
-#define	WAIT_SEC	0.97
+#define	WAIT_SEC	1.00
 
 DigitalOut	r(    RED   );
 DigitalOut	g(    GREEN );
@@ -47,16 +46,17 @@ int main( void )
 
 	p3t1755.info();
 
-	float	temp;
-	uint8_t	ibi_addr;
+	float		temp;
+	uint8_t		ibi_addr;
+	uint32_t	count	= 0;
 
 	while ( true )
 	{
 		if ( (ibi_addr	= i3c.check_IBI()) )
-			PRINTF("Read at %7.2f sec: *** IBI : Got IBI from target_address: 7’h%02X (0x%02X)\r\n", (float)clock() / CLOCKS_PER_SEC, ibi_addr, ibi_addr << 1 );
+			PRINTF("*** IBI : Got IBI from target_address: 7’h%02X (0x%02X)\r\n", ibi_addr, ibi_addr << 1 );
 
 		temp	= p3t1755;
-		PRINTF( "Read at %7.2f sec: Temperature: %8.4f˚C\r\n", (float)clock() / CLOCKS_PER_SEC, temp );
+		PRINTF( "Read at %4lu sec: Temperature: %8.4f˚C\r\n", count++, temp );
 
 		led_set_color( temp, ref_temp );
 		wait( WAIT_SEC );

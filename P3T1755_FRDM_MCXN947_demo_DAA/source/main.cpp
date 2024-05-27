@@ -11,17 +11,31 @@
 #include	<time.h>
 
 I3C		i3c( I3C_SDA, I3C_SCL );	//	SDA, SCL
-P3T1755	p3t1755( i3c, P3T1755_ADDR_I2C );
 
-#define	WAIT_SEC	0.97
+const uint8_t	static_address_list[]	= { 0x48, 0x4A, 0x4C };
+const uint8_t	dynamic_address_list[]	= { 0x1A, 0x2B, 0x3C };
+
+P3T1755	sensor[]	= {
+						P3T1755( i3c, static_address_list[ 0 ] ),
+						P3T1755( i3c, static_address_list[ 1 ] ),
+						P3T1755( i3c, static_address_list[ 2 ] )
+				  };
+
+P3T1755	lm75b( i3c, 0x4F );
+
+#define	WAIT_SEC	0.96
 
 DigitalOut	r(    RED   );
 DigitalOut	g(    GREEN );
 DigitalOut	b(    BLUE  );
-DigitalOut	trig( D2    );	//	IBI detection trigger output for oscilloscope
+DigitalOut	trig( MB_INT);	//	IBI detection trigger output for oscilloscope
+InterruptIn	mode_delect_button( SW3 );
+
+bool	i3c_mode	= true;
 
 void	DAA_set_dynamic_ddress_from_static_ddress( uint8_t static_address, uint8_t dynamic_address );
-void	DAA( const uint8_t *address_list, uint8_t list_length );
+int		DAA( const uint8_t *address_list, uint8_t list_length );
+void	mode_select_callback( void );
 
 int main( void )
 {
@@ -30,40 +44,44 @@ int main( void )
 
 	PRINTF("\r\nP3T1755 (Temperature sensor) I3C operation sample: getting temperature data and IBI\r\n");
 
-#if 0
-	DAA_set_dynamic_ddress_from_static_ddress( P3T1755_ADDR_I2C, P3T1755_ADDR_I3C );
-	p3t1755.address_overwrite( P3T1755_ADDR_I3C );
-#else
-	const uint8_t	address_list[]	= { 0x08, 0x09, 0x0A };
-	DAA( address_list, sizeof( address_list ) );
-	p3t1755.address_overwrite( P3T1755_ADDR_I3C );
-#endif
+	int	ndev	= DAA( dynamic_address_list, sizeof( dynamic_address_list ) );
 
-	float ref_temp	= p3t1755;
-	float low		= ref_temp + 1.0;
-	float high		= ref_temp + 2.0;
+	float	ref_temp	= 0;
 
-	p3t1755.high( high );
-	p3t1755.low(  low  );
+	for ( int i = 0; i < ndev; i++)
+	{
+		sensor[ i ].address_overwrite( dynamic_address_list[ i ] );
 
-	PRINTF( "  T_LOW / T_HIGH registers updated: %8.4f˚C / %8.4f˚C\r\n", low, high );
-	PRINTF( "      based on current temperature: %8.4f˚C\r\n", ref_temp );
+		ref_temp	= sensor[ i ];
+		sensor[ i ].high( ref_temp + 2.0 );
+		sensor[ i ].low(  ref_temp + 1.0 );
 
-	p3t1755.conf( p3t1755.conf() | 0x02 );		//	ALART pin configured to INT mode
-	p3t1755.ccc_set( CCC::DIRECT_ENEC, 0x01 );	// Enable IBI
+		sensor[ i ].conf( sensor[ i ].conf() | 0x02 );	//	ALART pin configured to INT mode
+		sensor[ i ].ccc_set( CCC::DIRECT_ENEC, 0x01 );	// Enable IBI
 
-	p3t1755.info();
+		sensor[ i ].info();
+	}
 
-	float	temp;
+	float	temp	= 0;
 	uint8_t	ibi_addr;
+
+	mode_delect_button.rise( mode_select_callback );
 
 	while ( true )
 	{
 		if ( (ibi_addr	= i3c.check_IBI()) )
-			PRINTF("Read at %7.2f sec: *** IBI : Got IBI from target_address: 7’h%02X (0x%02X)\r\n", (float)clock() / CLOCKS_PER_SEC, ibi_addr, ibi_addr << 1 );
+//			PRINTF( "\r\nRead at %7.2f sec: *** IBI : Got IBI from target_address: 0x%02X", (float)clock() / CLOCKS_PER_SEC, ibi_addr );
+			PRINTF( "\r\n*** IBI : Got IBI from target_address: 0x%02X", ibi_addr );
 
-		temp	= p3t1755;
-		PRINTF( "Read at %7.2f sec: Temperature: %8.4f˚C\r\n", (float)clock() / CLOCKS_PER_SEC, temp );
+//		PRINTF( "\r\nRead at %7.2f sec: Temperature:", (float)clock() / CLOCKS_PER_SEC );
+		PRINTF( "\r\n" );
+
+		for ( int i = 0; i < ndev; i++)
+			PRINTF( "  %8.4f˚C @%02X", (float)sensor[ i ], dynamic_address_list[ i ] );
+
+		i3c.mode( I3C::I2C_MODE );
+		PRINTF( "  %7.3f˚C @4F(I2C)", (float)lm75b );
+		i3c.mode( I3C::I3C_MODE );
 
 		led_set_color( temp, ref_temp );
 		wait( WAIT_SEC );
@@ -76,7 +94,7 @@ void DAA_set_dynamic_ddress_from_static_ddress( uint8_t static_address, uint8_t 
 	i3c.ccc_set( CCC::DIRECT_SETDASA, static_address, dynamic_address << 1 ); // Set Dynamic Address from Static Address
 }
 
-void DAA( const uint8_t *address_list, uint8_t list_length )
+int DAA( const uint8_t *address_list, uint8_t list_length )
 {
 	i3c_device_info_t	*list_p;
 	int					n_devices;
@@ -99,4 +117,11 @@ void DAA( const uint8_t *address_list, uint8_t list_length )
 		printf( "  hdrMode        = 0x%02X\r\n",  list_p[ i ].hdrMode        );
 		printf( "\r\n" );
 	}
+
+	return n_devices;
+}
+
+void mode_select_callback( void )
+{
+	i3c_mode	= !i3c_mode;
 }

@@ -3,6 +3,8 @@
 import	os
 import	subprocess
 
+build_configs	= [ "Debug", "Release" ]
+
 dox_file_name	= "Doxyfile"
 dox_folder_name	= "r01lib_docs"
 
@@ -65,7 +67,12 @@ for target in prjs_path:
 	except:
 		pass
 	else:
-		subprocess.run( "rm -rf Debug/", shell = True )
+		for cnfg in build_configs:
+			subprocess.run( "mkdir " + cnfg + "-ld", shell = True )
+			subprocess.run( "cp " + cnfg + "/*.ld " + cnfg + "-ld/", shell = True )
+			subprocess.run( "rm -rf " + cnfg + "/", shell = True )
+			subprocess.run( "mv " + cnfg + "-ld/ " + cnfg + "/", shell = True )
+	
 		subprocess.run( "rm *.launch *.mex", shell = True )
 
 print( "" )

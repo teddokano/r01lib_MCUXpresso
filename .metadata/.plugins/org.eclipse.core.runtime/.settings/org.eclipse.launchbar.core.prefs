@@ -35,6 +35,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_basic_oper
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_basic_operation\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_demo\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXA153_demo\ LinkServer\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXN947_basic_operation\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXN947_basic_operation\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXN947_demo\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXN947_demo\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_I3C_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=null\:---

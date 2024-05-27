@@ -119,6 +119,7 @@
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.777241534" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.534055492" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=1"/>
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="CPU_MCXA153VLH"/>
 									<listOptionValue builtIn="false" value="CPU_MCXA153VLH_cm33_nodsp"/>
@@ -139,15 +140,21 @@
 								<option id="gnu.c.compiler.option.preprocessor.preprocess.1915810353" name="Preprocess only (-E)" superClass="gnu.c.compiler.option.preprocessor.preprocess" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.149044858" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1436973102" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/lists}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/drivers}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CMSIS}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/device}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/utilities}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/board}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/source/r01lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/source/r01device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/component/r01device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/component/pwm_for_led}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/source/demo}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/component/lists}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/drivers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/CMSIS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/component/serial_manager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/utilities}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/component/uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/component/pwm_for_led}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.include.files.10484507" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.exe.debug.option.optimization.level.1683574961" name="Optimization Level" superClass="com.crt.advproject.gcc.exe.debug.option.optimization.level" useByScannerDiscovery="true"/>
@@ -391,6 +398,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.nostdinc.1109171661" name="Do not search system directories (-nostdinc)" superClass="gnu.cpp.compiler.option.preprocessor.nostdinc" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.preprocess.1247825360" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.preprocessor.def.1194254949" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=1"/>
 									<listOptionValue builtIn="false" value="CPU_MCXA153VLH"/>
 									<listOptionValue builtIn="false" value="CPU_MCXA153VLH_cm33_nodsp"/>
 									<listOptionValue builtIn="false" value="SDK_OS_BAREMETAL"/>
@@ -403,15 +411,19 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.undef.20901767" name="Undefined symbols (-U)" superClass="gnu.cpp.compiler.option.preprocessor.undef" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1720283829" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/lists}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/drivers}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CMSIS}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/device}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/utilities}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/_r01lib_irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/source/r01lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/source/r01device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/board}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/drivers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/utilities}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/component/uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/component/serial_manager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/component/lists}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/CMSIS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/startup}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.include.files.100181151" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.compiler.option.optimization.flags.1381747385" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" useByScannerDiscovery="false" value="-fno-common" valueType="string"/>
@@ -482,6 +494,7 @@
 								<option id="gnu.c.compiler.option.preprocessor.nostdinc.562424610" name="Do not search system directories (-nostdinc)" superClass="gnu.c.compiler.option.preprocessor.nostdinc" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.preprocessor.preprocess.488468882" name="Preprocess only (-E)" superClass="gnu.c.compiler.option.preprocessor.preprocess" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.504579478" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=1"/>
 									<listOptionValue builtIn="false" value="CPU_MCXA153VLH"/>
 									<listOptionValue builtIn="false" value="CPU_MCXA153VLH_cm33_nodsp"/>
 									<listOptionValue builtIn="false" value="SDK_OS_BAREMETAL"/>
@@ -494,15 +507,19 @@
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.880682036" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.539206922" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/lists}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/drivers}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CMSIS}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/device}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/serial_manager}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/utilities}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/component/uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/_r01lib_irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/source/r01lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/source/r01device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/board}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/drivers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/device}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/utilities}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/component/uart}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/component/serial_manager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/component/lists}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/CMSIS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxn947/startup}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.include.files.259991901" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.optimization.flags.517730271" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="-fno-common" valueType="string"/>
@@ -592,8 +609,12 @@
 								<option id="gnu.cpp.link.option.nodeflibs.1715018328" name="Do not use default libraries (-nodefaultlibs)" superClass="gnu.cpp.link.option.nodeflibs"/>
 								<option id="gnu.cpp.link.option.nostdlibs.85514562" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.link.option.strip.449519060" name="Omit all symbol information (-s)" superClass="gnu.cpp.link.option.strip"/>
-								<option id="gnu.cpp.link.option.libs.2019644079" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
-								<option id="gnu.cpp.link.option.paths.322735808" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.2019644079" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="_r01lib_frdm_mcxa153"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.paths.322735808" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa153/Debug}&quot;"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.1674097447" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.other.2086576198" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList">
 									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
