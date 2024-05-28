@@ -27,7 +27,7 @@ int main( void )
 		i3c.write( dynamic_address, w_data, sizeof( w_data ), I3C::NO_STOP );
 		i3c.read(  dynamic_address, r_data, sizeof( r_data ) );
 
-		PRINTF( "0x%04X\r\n", (((int)r_data[ 0 ]) << 8 | r_data[ 1 ]) );
+		PRINTF( "%f\r\n", (((int)r_data[ 0 ]) << 8 | r_data[ 1 ]) / 256.0 );
 		wait( 1 );
 	}
 }

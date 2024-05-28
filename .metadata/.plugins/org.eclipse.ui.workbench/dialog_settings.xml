@@ -4,6 +4,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tedd/Desktop/demo2.zip"/>
 			<item value="/Users/tedd/Desktop/IxC.zip"/>
 			<item value="/Users/tedd/Desktop/p3t.zip"/>
 			<item value="/Users/tedd/Desktop/r01.zip"/>
@@ -23,7 +24,6 @@
 			<item value="/Users/tedd/Desktop/afe_base.zip"/>
 			<item value="/Users/tedd/Desktop/demo_test.zip"/>
 			<item value="/Users/tedd/Desktop/ARD_PCAL9722_demo_test.zip"/>
-			<item value="/Users/tedd/Desktop/r01lib_samples_v0.19.1.zip"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

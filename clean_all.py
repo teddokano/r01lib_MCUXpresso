@@ -68,11 +68,15 @@ for target in prjs_path:
 		pass
 	else:
 		for cnfg in build_configs:
-			subprocess.run( "mkdir " + cnfg + "-ld", shell = True )
-			subprocess.run( "cp " + cnfg + "/*.ld " + cnfg + "-ld/", shell = True )
-			subprocess.run( "rm -rf " + cnfg + "/", shell = True )
-			subprocess.run( "mv " + cnfg + "-ld/ " + cnfg + "/", shell = True )
-	
+			if os.path.isdir( cnfg ) and os.path.isfile( cnfg + "/makefile" ):
+				copying_files	= cnfg + "/*.ld " + cnfg + "/makefile " + cnfg + "/sources.mk "
+				subprocess.run( "mkdir " + cnfg + "-ld", shell = True )
+				subprocess.run( "cp " + copying_files + cnfg + "-ld/", shell = True )
+				subprocess.run( "rm -rf " + cnfg + "/", shell = True )
+				subprocess.run( "mv " + cnfg + "-ld/ " + cnfg + "/", shell = True )
+			else:
+				subprocess.run( "rm -rf " + cnfg + "/", shell = True )
+					
 		subprocess.run( "rm *.launch *.mex", shell = True )
 
 print( "" )
