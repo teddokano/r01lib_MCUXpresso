@@ -70,10 +70,8 @@ int main( void )
 	while ( true )
 	{
 		if ( (ibi_addr	= i3c.check_IBI()) )
-//			PRINTF( "\r\nRead at %7.2f sec: *** IBI : Got IBI from target_address: 0x%02X", (float)clock() / CLOCKS_PER_SEC, ibi_addr );
 			PRINTF( "\r\n*** IBI : Got IBI from target_address: 0x%02X", ibi_addr );
 
-//		PRINTF( "\r\nRead at %7.2f sec: Temperature:", (float)clock() / CLOCKS_PER_SEC );
 		PRINTF( "\r\n" );
 
 		for ( int i = 0; i < ndev; i++)
