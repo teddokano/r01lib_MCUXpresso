@@ -7,15 +7,17 @@
 
 #include	"r01lib.h"
 
-DigitalOut	led( D18 );
+DigitalOut	led( BLUE );
 
 int main( void )
 {
+	printf( "Hello, world!\r\n" );
+
 	led	= true;
 
 	while ( true )
 	{
 		led	= !led;
-//		wait( 0.5 );
+		wait( 0.5 );
 	}
 }

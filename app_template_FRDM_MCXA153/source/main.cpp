@@ -11,6 +11,8 @@ DigitalOut	led( BLUE );
 
 int main( void )
 {
+	printf( "Hello, world!\r\n" );
+
 	led	= true;
 
 	while ( true )
