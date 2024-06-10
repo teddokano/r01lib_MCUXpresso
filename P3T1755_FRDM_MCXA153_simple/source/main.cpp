@@ -8,6 +8,9 @@
 #include	"r01lib.h"
 #include	"temp_sensor/P3T1755.h"
 
+#define P3T1755_ADDR_I2C			0x48U
+#define P3T1755_ADDR_I3C			0x08U
+
 I3C		i3c( I3C_SDA, I3C_SCL );	//	SDA, SCL
 
 P3T1755		p3t1755( i3c, P3T1755_ADDR_I2C );
@@ -20,8 +23,6 @@ int main( void )
 
 	DAA_set_dynamic_ddress_from_static_ddress( P3T1755_ADDR_I2C, P3T1755_ADDR_I3C );
 	p3t1755.address_overwrite( P3T1755_ADDR_I3C );
-
-	p3t1755.info();
 
 	float	temp;
 

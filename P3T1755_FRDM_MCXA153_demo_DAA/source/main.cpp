@@ -8,7 +8,6 @@
 #include	"r01lib.h"
 #include	"pin_control.h"
 #include	"temp_sensor/P3T1755.h"
-#include	<time.h>
 
 I3C		i3c( I3C_SDA, I3C_SCL );	//	SDA, SCL
 
@@ -21,21 +20,19 @@ P3T1755	sensor[]	= {
 						P3T1755( i3c, static_address_list[ 2 ] )
 				  };
 
-P3T1755	lm75b( i3c, 0x4F );
+LM75B	lm75b( i3c, 0x4F );
 
 #define	WAIT_SEC	0.96
 
 DigitalOut	r(    RED   );
 DigitalOut	g(    GREEN );
 DigitalOut	b(    BLUE  );
-DigitalOut	trig( MB_INT);	//	IBI detection trigger output for oscilloscope
-InterruptIn	mode_delect_button( SW3 );
-
-bool	i3c_mode	= true;
+DigitalOut	trig( D2    );	//	IBI detection trigger output for oscilloscope
 
 void	DAA_set_dynamic_ddress_from_static_ddress( uint8_t static_address, uint8_t dynamic_address );
 int		DAA( const uint8_t *address_list, uint8_t list_length );
-void	mode_select_callback( void );
+bool	check_i2c_device( LM75B ts );
+void	info( LM75B ts );
 
 int main( void )
 {
@@ -53,19 +50,20 @@ int main( void )
 		sensor[ i ].address_overwrite( dynamic_address_list[ i ] );
 
 		ref_temp	= sensor[ i ];
-		sensor[ i ].high( ref_temp + 2.0 );
-		sensor[ i ].low(  ref_temp + 1.0 );
+		float low	= ref_temp + 1.0;
+		float high	= ref_temp + 2.0;
 
-		sensor[ i ].conf( sensor[ i ].conf() | 0x02 );	//	ALART pin configured to INT mode
-		sensor[ i ].ccc_set( CCC::DIRECT_ENEC, 0x01 );	// Enable IBI
+		sensor[ i ].thresholds( low, high );
 
-		sensor[ i ].info();
+		sensor[ i ].bit_op8( P3T1755::Conf, ~0x02, 0x02 );	//ALART pin configured to INT mode
+		sensor[ i ].ccc_set( CCC::DIRECT_ENEC, 0x01 );		// Enable IBI
+
+		info( sensor[ i ] );
 	}
 
-	float	temp	= 0;
+	bool	i2c_device	= check_i2c_device( lm75b );
+	float	temp		= 0;
 	uint8_t	ibi_addr;
-
-	mode_delect_button.rise( mode_select_callback );
 
 	while ( true )
 	{
@@ -77,9 +75,12 @@ int main( void )
 		for ( int i = 0; i < ndev; i++)
 			PRINTF( "  %8.4f˚C @%02X", (float)sensor[ i ], dynamic_address_list[ i ] );
 
-		i3c.mode( I3C::I2C_MODE );
-		PRINTF( "  %7.3f˚C @4F(I2C)", (float)lm75b );
-		i3c.mode( I3C::I3C_MODE );
+		if ( i2c_device )
+		{
+			i3c.mode( I3C::I2C_MODE );
+			PRINTF( "  %7.3f˚C @4F(I2C)", (float)lm75b );
+			i3c.mode( I3C::I3C_MODE );
+		}
 
 		led_set_color( temp, ref_temp );
 		wait( WAIT_SEC );
@@ -119,7 +120,45 @@ int DAA( const uint8_t *address_list, uint8_t list_length )
 	return n_devices;
 }
 
-void mode_select_callback( void )
+bool check_i2c_device(  LM75B ts )
 {
-	i3c_mode	= !i3c_mode;
+	uint8_t	dummy	= 0;
+
+	i3c.mode( I3C::I2C_MODE );
+	int	r	= i3c.write( ts.address(), &dummy, 1 );
+	i3c.mode( I3C::I3C_MODE );
+
+	return !r;
 }
+
+void info( LM75B ts )
+{
+#pragma GCC diagnostic ignored "-Wmisleading-indentation"
+	uint8_t		pid[ I3C::PID_LENGTH ];
+	uint8_t		bcr, dcr;
+
+	uint8_t		a	= ts.address();
+	uint16_t	t	= ts.read_r16( P3T1755::Temp   );
+	uint8_t		c	= ts.read_r8(  P3T1755::Conf   );
+	uint16_t	l	= ts.read_r16( P3T1755::T_LOW  );
+	uint16_t	h	= ts.read_r16( P3T1755::T_HIGH );
+
+	ts.ccc_get( CCC::DIRECT_GETPID, pid, sizeof( pid ) );
+	ts.ccc_get( CCC::DIRECT_GETBCR, &bcr, 1 );
+	ts.ccc_get( CCC::DIRECT_GETDCR, &dcr, 1 );
+
+	PRINTF( "\r\nRegister dump - I3C target address:7’h%02X (0x%02X)\r\n", a, a << 1 );
+	PRINTF( "  - Temp   (0x0): 0x%04X (%8.4f˚C)\r\n", t, (float)t / 256.0 );
+	PRINTF( "  - Conf   (0x1): 0x  %02X\r\n", c );
+	PRINTF( "  - T_LOW  (0x2): 0x%04X (%8.4f˚C)\r\n", l, (float)l / 256.0 );
+	PRINTF( "  - T_HIGH (0x3): 0x%04X (%8.4f˚C)\r\n", h, (float)h / 256.0 );
+
+	PRINTF( "  * PID    (CCC:Provisioned ID)                 : 0x" );
+	for ( int i = 0; i < I3C::PID_LENGTH; i++ ) PRINTF( " %02X", pid[ i ] );	PRINTF( "\r\n" );
+	PRINTF( "  * BCR    (CCC:Bus Characteristics Register)   : 0x%02X\r\n", bcr );
+	PRINTF( "  * DCR    (CCC:Device Characteristics Register): 0x%02X (= %s)\r\n", dcr, (0x63 == dcr) ? "Temperature sensor" : "Unknown" );
+
+	PRINTF( "\r\n" );
+}
+
+
