@@ -118,7 +118,7 @@ void int_cause_monitor( uint8_t* status )
 }
 
 void set_time( void ) {
-	const char* current_time	= "2024-4-5 6:58:30";
+	const char* current_time	= "2024-6-11 15:58:30";
 	const char* format			= "%Y-%m-%d %H:%M:%S";
 	struct tm	now_tm;
 

@@ -9,7 +9,7 @@
 #include	"gpio/PCAL6534.h"
 
 I2C			i2c( I2C_SDA, I2C_SCL );	//	SDA, SCL
-PCAL6534	gpio( i2c );
+PCAL6534	gpio( i2c, 0x22 );
 
 
 #if 0

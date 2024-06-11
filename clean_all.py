@@ -69,6 +69,9 @@ for target in prjs_path:
 	else:
 		for cnfg in build_configs:
 			if os.path.isdir( cnfg ) and os.path.isfile( cnfg + "/makefile" ):
+				"""
+				subprocess.run( "rm -rf " + cnfg + "/", shell = True )
+				"""
 				copying_files	= cnfg + "/*.ld " + cnfg + "/makefile " + cnfg + "/sources.mk "
 				subprocess.run( "mkdir " + cnfg + "-ld", shell = True )
 				subprocess.run( "cp " + copying_files + cnfg + "-ld/", shell = True )
