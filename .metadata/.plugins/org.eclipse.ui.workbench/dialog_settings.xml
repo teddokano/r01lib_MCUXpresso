@@ -4,9 +4,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
-			<item value="/Users/tedd/Desktop/template.zip"/>
 			<item value="/Users/tedd/Desktop/p3t.zip"/>
 			<item value="/Users/tedd/Desktop/9722.zip"/>
+			<item value="/Users/tedd/Desktop/template.zip"/>
 			<item value="/Users/tedd/Desktop/rel.zip"/>
 			<item value="/Users/tedd/Desktop/try_int.zip"/>
 			<item value="/Users/tedd/Desktop/demo_set.zip"/>
