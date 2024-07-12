@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXN947_demo LinkServer Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_basic_operation_FRDM_MCXN236 LinkServer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_demo_FRDM_MCXN236 LinkServer Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AFE_basic_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:AFE_basic_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=null\:---
@@ -21,6 +21,10 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCA9957_basic_operation_FRD
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCA9957_with_LED_class_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_basic_operation_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_basic_operation_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_basic_operation_FRDM_MCXN236\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_basic_operation_FRDM_MCXN236\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_demo_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_demo_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ARD_PCAL9722_demo_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchMode=debug
@@ -83,6 +87,7 @@ org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXA153_demo\ Li
 org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXA153_demo\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXA153_demo_DAA\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXA153_simple\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXN947_basic_operation\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXN947_basic_operation\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXN947_basic_operation3\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:P3T1755_FRDM_MCXN947_basic_operation3\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
