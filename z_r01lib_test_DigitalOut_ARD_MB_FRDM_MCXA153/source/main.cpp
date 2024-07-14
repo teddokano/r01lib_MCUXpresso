@@ -7,7 +7,7 @@
 
 #include	"r01lib.h"
 
-#if 1
+#if 0
 DigitalOut	pins[]	= {
 		DigitalOut( D0 ),
 		DigitalOut( D1 ),
