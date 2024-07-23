@@ -154,7 +154,7 @@ $(function(){ initResizable(false); });
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_i2_c__device.html#a4b2526a8ce59f91ca9019b3d66a76d71">   52</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_i2_c__device.html#a4b2526a8ce59f91ca9019b3d66a76d71">I2C_device::tx</a>( <span class="keyword">const</span> uint8_t *data, uint16_t size, <span class="keywordtype">bool</span> stop )</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_i2_c__device.html#a5bfeccd62183b8969e43f18ec025a619">i2c</a>.<a class="code hl_function" href="class_i2_c.html#aba7f5f777e19bb5aded1847da55212d6">write</a>( <a class="code hl_variable" href="class_i2_c__device.html#ac1690942862f4dac204ff918b1f8ca48">i2c_addr</a>, data, size );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_i2_c__device.html#a5bfeccd62183b8969e43f18ec025a619">i2c</a>.<a class="code hl_function" href="class_i2_c.html#aba7f5f777e19bb5aded1847da55212d6">write</a>( <a class="code hl_variable" href="class_i2_c__device.html#ac1690942862f4dac204ff918b1f8ca48">i2c_addr</a>, data, size, stop );</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
