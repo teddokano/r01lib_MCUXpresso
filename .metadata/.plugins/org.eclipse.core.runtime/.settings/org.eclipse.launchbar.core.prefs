@@ -49,6 +49,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:P3T1755_FRDM_MCXN947_demo\ Link
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:app_template_FRDM_MCXN236\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:app_template_FRDM_MCXN236\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_I3C_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_InterruptIn_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_InterruptIn_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_InterruptIn_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:z_r01lib_test_Ticker_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=null\:---
 org.eclipse.launchbar.core.descriptorType.default\:AFE_basic_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
@@ -120,5 +122,7 @@ org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_DigitalOut_RGB_
 org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_DigitalOut_RGB_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_I3C_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_I3C_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_InterruptIn_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_InterruptIn_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_InterruptIn_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:z_r01lib_test_Ticker_FRDM_MCXN947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
