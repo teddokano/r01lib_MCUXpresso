@@ -9,10 +9,10 @@
 #include	"pin_control.h"
 #include	"temp_sensor/P3T1755.h"
 
-#define P3T1755_ADDR_I2C			0x48U
+#define P3T1755_ADDR_I2C			0x4CU
 #define P3T1755_ADDR_I3C			0x08U
 
-I3C		i3c( I3C_SDA, I3C_SCL );	//	SDA, SCL
+I3C		i3c( I2C_SDA, I2C_SCL );	//	SDA, SCL
 P3T1755	p3t1755( i3c, P3T1755_ADDR_I2C );
 
 #define	WAIT_SEC	1.00
