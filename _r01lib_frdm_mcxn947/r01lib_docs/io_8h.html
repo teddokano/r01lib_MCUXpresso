@@ -91,7 +91,8 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">io.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -162,6 +163,15 @@ Macros</h2></td></tr>
 <tr class="separator:a145261b9015c1a92fe8439f9d36dd56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8418330f44b6d0ffb7d19f7c54055b4" id="r_ae8418330f44b6d0ffb7d19f7c54055b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8418330f44b6d0ffb7d19f7c54055b4">ARD_A5</a>&#160;&#160;&#160;A5</td></tr>
 <tr class="separator:ae8418330f44b6d0ffb7d19f7c54055b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7365aba03f8f153d580d94e677847529" id="r_a7365aba03f8f153d580d94e677847529"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7365aba03f8f153d580d94e677847529">PORT_SetPinPullUpDown</a> (PORT_Type *base, uint32_t pin, int enable, int logic)</td></tr>
+<tr class="separator:a7365aba03f8f153d580d94e677847529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3af5ab6f26b64eba59ce0d75f26ba02" id="r_ae3af5ab6f26b64eba59ce0d75f26ba02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3af5ab6f26b64eba59ce0d75f26ba02">PORT_SetPinOpenDrain</a> (PORT_Type *base, uint32_t pin, int enable)</td></tr>
+<tr class="separator:ae3af5ab6f26b64eba59ce0d75f26ba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c2a0b45fde5ab6b2fdc06ff4a41dc9" id="r_a51c2a0b45fde5ab6b2fdc06ff4a41dc9"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51c2a0b45fde5ab6b2fdc06ff4a41dc9">PORT_GetPinMode</a> (PORT_Type *base, uint32_t pin)</td></tr>
+<tr class="separator:a51c2a0b45fde5ab6b2fdc06ff4a41dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a37e5265e5fc1a10340a33904b6bb01d1" name="a37e5265e5fc1a10340a33904b6bb01d1"></a>
@@ -547,6 +557,115 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00016">16</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a51c2a0b45fde5ab6b2fdc06ff4a41dc9" name="a51c2a0b45fde5ab6b2fdc06ff4a41dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c2a0b45fde5ab6b2fdc06ff4a41dc9">&#9670;&#160;</a></span>PORT_GetPinMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t PORT_GetPinMode </td>
+          <td>(</td>
+          <td class="paramtype">PORT_Type *</td>          <td class="paramname"><span class="paramname"><em>base</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pin</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00650">650</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3af5ab6f26b64eba59ce0d75f26ba02" name="ae3af5ab6f26b64eba59ce0d75f26ba02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3af5ab6f26b64eba59ce0d75f26ba02">&#9670;&#160;</a></span>PORT_SetPinOpenDrain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PORT_SetPinOpenDrain </td>
+          <td>(</td>
+          <td class="paramtype">PORT_Type *</td>          <td class="paramname"><span class="paramname"><em>base</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>enable</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00645">645</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
+
+</div>
+</div>
+<a id="a7365aba03f8f153d580d94e677847529" name="a7365aba03f8f153d580d94e677847529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7365aba03f8f153d580d94e677847529">&#9670;&#160;</a></span>PORT_SetPinPullUpDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PORT_SetPinPullUpDown </td>
+          <td>(</td>
+          <td class="paramtype">PORT_Type *</td>          <td class="paramname"><span class="paramname"><em>base</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>enable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>logic</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="io_8h_source.html#l00639">639</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>

@@ -173,6 +173,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afaad09fa9bdd23623bddbdcd7585a9fe inherit pub_methods_class_i2_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529cd058cd3ff855d0292d925203b09d inherit pub_methods_class_i2_c" id="r_a529cd058cd3ff855d0292d925203b09d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c.html#a529cd058cd3ff855d0292d925203b09d">frequency</a> (uint32_t frequency)</td></tr>
 <tr class="separator:a529cd058cd3ff855d0292d925203b09d inherit pub_methods_class_i2_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d151cb84a8db6e0034bc767764cd56 inherit pub_methods_class_i2_c" id="r_a95d151cb84a8db6e0034bc767764cd56"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c.html#a95d151cb84a8db6e0034bc767764cd56">pullup</a> (bool enable)</td></tr>
+<tr class="separator:a95d151cb84a8db6e0034bc767764cd56 inherit pub_methods_class_i2_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1dcd88fb57d976449f635cdaeb22e77 inherit pub_methods_class_i2_c" id="r_aa1dcd88fb57d976449f635cdaeb22e77"><td class="memItemLeft" align="right" valign="top">virtual status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c.html#aa1dcd88fb57d976449f635cdaeb22e77">reg_write</a> (uint8_t targ, uint8_t reg, const uint8_t *dp, int length)</td></tr>
 <tr class="separator:aa1dcd88fb57d976449f635cdaeb22e77 inherit pub_methods_class_i2_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed1ee123770c39102205e35df783453c inherit pub_methods_class_i2_c" id="r_aed1ee123770c39102205e35df783453c"><td class="memItemLeft" align="right" valign="top">virtual status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2_c.html#aed1ee123770c39102205e35df783453c">reg_write</a> (uint8_t targ, uint8_t reg, uint8_t data)</td></tr>
@@ -347,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="i3c_8cpp_source.html#l00042">42</a> of file <a class="el" href="i3c_8cpp_source.html">i3c.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="i3c_8h_source.html#l00210">bus_type</a>, <a class="el" href="i3c_8cpp_source.html#l00025">EXAMPLE_MASTER</a>, <a class="el" href="i3c_8h_source.html#l00213">first_broadcast</a>, <a class="el" href="i3c_8cpp_source.html#l00035">g_i3c_m_handle</a>, <a class="el" href="i3c_8cpp_source.html#l00026">I3C_MASTER_CLOCK_FREQUENCY</a>, <a class="el" href="i3c_8h_source.html#l00264">masterCallback</a>, <a class="el" href="i3c_8h_source.html#l00212">masterConfig</a>, <a class="el" href="i3c_8h_source.html#l00055">OD_FREQ</a>, <a class="el" href="mcu_8cpp_source.html#l00151">panic()</a>, <a class="el" href="io_8cpp_source.html#l00392">DigitalInOut::pin_mux()</a>, and <a class="el" href="i3c_8h_source.html#l00056">PP_FREQ</a>.</p>
+<p class="reference">References <a class="el" href="i2c_8h_source.html#l00174">I2C::_scl</a>, <a class="el" href="i2c_8h_source.html#l00173">I2C::_sda</a>, <a class="el" href="i3c_8h_source.html#l00210">bus_type</a>, <a class="el" href="i3c_8cpp_source.html#l00025">EXAMPLE_MASTER</a>, <a class="el" href="i3c_8h_source.html#l00213">first_broadcast</a>, <a class="el" href="i3c_8cpp_source.html#l00035">g_i3c_m_handle</a>, <a class="el" href="i3c_8cpp_source.html#l00026">I3C_MASTER_CLOCK_FREQUENCY</a>, <a class="el" href="i3c_8h_source.html#l00264">masterCallback</a>, <a class="el" href="i3c_8h_source.html#l00212">masterConfig</a>, <a class="el" href="i3c_8h_source.html#l00055">OD_FREQ</a>, <a class="el" href="mcu_8cpp_source.html#l00151">panic()</a>, <a class="el" href="io_8cpp_source.html#l00394">DigitalInOut::pin_mux()</a>, and <a class="el" href="i3c_8h_source.html#l00056">PP_FREQ</a>.</p>
 
 </div>
 </div>
@@ -431,7 +433,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="i3c_8cpp_source.html#l00176">176</a> of file <a class="el" href="i3c_8cpp_source.html">i3c.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="i3c_8h_source.html#l00063">BROADCAST_ADDR</a>, <a class="el" href="i3c_8h_source.html#l00213">first_broadcast</a>, <a class="el" href="i3c_8cpp_source.html#l00103">frequency()</a>, <a class="el" href="i2c_8h_source.html#l00021">REG_RW_BUFFER_SIZE</a>, and <a class="el" href="i3c_8cpp_source.html#l00113">write()</a>.</p>
+<p class="reference">References <a class="el" href="i3c_8h_source.html#l00063">BROADCAST_ADDR</a>, <a class="el" href="i3c_8h_source.html#l00213">first_broadcast</a>, <a class="el" href="i3c_8cpp_source.html#l00103">frequency()</a>, <a class="el" href="i2c_8h_source.html#l00022">REG_RW_BUFFER_SIZE</a>, and <a class="el" href="i3c_8cpp_source.html#l00113">write()</a>.</p>
 
 </div>
 </div>
@@ -486,7 +488,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="i3c_8cpp_source.html#l00208">208</a> of file <a class="el" href="i3c_8cpp_source.html">i3c.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="i3c_8h_source.html#l00063">BROADCAST_ADDR</a>, <a class="el" href="i2c_8h_source.html#l00030">I2C::NO_STOP</a>, <a class="el" href="i3c_8cpp_source.html#l00118">read()</a>, and <a class="el" href="i3c_8cpp_source.html#l00113">write()</a>.</p>
+<p class="reference">References <a class="el" href="i3c_8h_source.html#l00063">BROADCAST_ADDR</a>, <a class="el" href="i2c_8h_source.html#l00031">I2C::NO_STOP</a>, <a class="el" href="i3c_8cpp_source.html#l00118">read()</a>, and <a class="el" href="i3c_8cpp_source.html#l00113">write()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +537,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="i3c_8cpp_source.html#l00198">198</a> of file <a class="el" href="i3c_8cpp_source.html">i3c.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="i3c_8h_source.html#l00063">BROADCAST_ADDR</a>, <a class="el" href="i2c_8h_source.html#l00030">I2C::NO_STOP</a>, and <a class="el" href="i3c_8cpp_source.html#l00113">write()</a>.</p>
+<p class="reference">References <a class="el" href="i3c_8h_source.html#l00063">BROADCAST_ADDR</a>, <a class="el" href="i2c_8h_source.html#l00031">I2C::NO_STOP</a>, and <a class="el" href="i3c_8cpp_source.html#l00113">write()</a>.</p>
 
 </div>
 </div>
