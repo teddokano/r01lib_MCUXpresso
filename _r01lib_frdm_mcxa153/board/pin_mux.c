@@ -115,6 +115,11 @@ BOARD_InitPins:
   - {pin_num: '39', peripheral: GPIO3, signal: 'GPIO, 11', pin_signal: P3_11/WUU0_IN24/TRIG_IN6/LPSPI1_PCS0/LPUART1_CTS_B/CT1_MAT1/PWM0_B2}
   - {pin_num: '39', peripheral: WUU0, signal: 'P, 24', pin_signal: P3_11/WUU0_IN24/TRIG_IN6/LPSPI1_PCS0/LPUART1_CTS_B/CT1_MAT1/PWM0_B2}
   - {pin_num: '21', peripheral: GPIO2, signal: 'GPIO, 7', pin_signal: P2_7/TRIG_IN5/CT_INP19/CT1_MAT3/VREFI/ADC0_A7}
+  - {pin_num: '56', peripheral: GPIO1, signal: 'GPIO, 0', pin_signal: P1_0/WUU0_IN6/LPTMR0_ALT3/TRIG_IN0/LPSPI0_SDO/LPI2C0_SDA/CT_INP4/CT0_MAT2/ADC0_A16/CMP0_IN3}
+  - {pin_num: '57', peripheral: GPIO1, signal: 'GPIO, 1', pin_signal: P1_1/TRIG_IN1/LPSPI0_SCK/LPI2C0_SCL/CT_INP5/CT0_MAT3/ADC0_A17/CMP1_IN3}
+  - {pin_num: '58', peripheral: GPIO1, signal: 'GPIO, 2', pin_signal: P1_2/TRIG_OUT0/LPSPI0_SDI/LPI2C0_SDAS/CT1_MAT0/CT_INP0/ADC0_A18}
+  - {pin_num: '59', peripheral: GPIO1, signal: 'GPIO, 3', pin_signal: P1_3/WUU0_IN7/TRIG_OUT1/LPSPI0_PCS0/LPI2C0_SCLS/CT1_MAT1/CT_INP1/ADC0_A19/CMP0_IN1}
+  - {pin_num: '59', peripheral: WUU0, signal: 'P, 7', pin_signal: P1_3/WUU0_IN7/TRIG_OUT1/LPSPI0_PCS0/LPI2C0_SCLS/CT1_MAT1/CT_INP1/ADC0_A19/CMP0_IN1}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -238,6 +243,26 @@ void BOARD_InitPins(void)
                      /* Input Buffer Enable: Enables. */
                      | PORT_PCR_IBE(PCR_IBE_ibe1));
 
+    PORT1->PCR[0] = ((PORT1->PCR[0] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_MUX_MASK | PORT_PCR_IBE_MASK)))
+
+                     /* Pin Multiplex Control: PORT1_0 (pin 56) is configured as P1_0. */
+                     | PORT_PCR_MUX(PORT1_PCR0_MUX_mux00)
+
+                     /* Input Buffer Enable: Enables. */
+                     | PORT_PCR_IBE(PCR_IBE_ibe1));
+
+    PORT1->PCR[1] = ((PORT1->PCR[1] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_MUX_MASK | PORT_PCR_IBE_MASK)))
+
+                     /* Pin Multiplex Control: PORT1_1 (pin 57) is configured as P1_1. */
+                     | PORT_PCR_MUX(PORT1_PCR1_MUX_mux00)
+
+                     /* Input Buffer Enable: Enables. */
+                     | PORT_PCR_IBE(PCR_IBE_ibe1));
+
     /* PORT1_10 (pin 4) is configured as P1_10 */
     PORT_SetPinMux(BOARD_INITPINS_ARD_A0_PORT, BOARD_INITPINS_ARD_A0_PIN, kPORT_MuxAlt0);
 
@@ -292,6 +317,26 @@ void BOARD_InitPins(void)
 
                       /* Input Buffer Enable: Enables. */
                       | PORT_PCR_IBE(PCR_IBE_ibe1));
+
+    /* PORT1_2 (pin 58) is configured as P1_2 */
+    PORT_SetPinMux(PORT1, 2U, kPORT_MuxAlt0);
+
+    PORT1->PCR[2] = ((PORT1->PCR[2] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_IBE_MASK)))
+
+                     /* Input Buffer Enable: Enables. */
+                     | PORT_PCR_IBE(PCR_IBE_ibe1));
+
+    PORT1->PCR[3] = ((PORT1->PCR[3] &
+                      /* Mask bits to zero which are setting */
+                      (~(PORT_PCR_MUX_MASK | PORT_PCR_IBE_MASK)))
+
+                     /* Pin Multiplex Control: PORT1_3 (pin 59) is configured as P1_3, WUU0_IN7. */
+                     | PORT_PCR_MUX(PORT1_PCR3_MUX_mux00)
+
+                     /* Input Buffer Enable: Enables. */
+                     | PORT_PCR_IBE(PCR_IBE_ibe1));
 
     /* PORT1_4 (pin 62) is configured as P1_4 */
     PORT_SetPinMux(BOARD_INITPINS_ARD_D0_PORT, BOARD_INITPINS_ARD_D0_PIN, kPORT_MuxAlt0);
