@@ -30,15 +30,18 @@ void BOARD_InitBootPins(void);
 #define PORT2_PCR12_MUX_mux00 0x00u /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT2_PCR13_MUX_mux00 0x00u /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT2_PCR16_MUX_mux00 0x00u /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
+#define PORT2_PCR1_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
+#define PORT2_PCR2_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT2_PCR4_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT2_PCR5_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT2_PCR6_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
+#define PORT2_PCR7_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT3_PCR27_MUX_mux10 0x02u /*!<@brief Pin Multiplex Control: Alternative 2 (chip-specific) */
 #define PORT3_PCR28_MUX_mux10 0x02u /*!<@brief Pin Multiplex Control: Alternative 2 (chip-specific) */
 #define PORT3_PCR29_MUX_mux00 0x00u /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT3_PCR30_MUX_mux00 0x00u /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 #define PORT3_PCR31_MUX_mux00 0x00u /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
-#define PORT3_PCR7_MUX_mux101 0x05u /*!<@brief Pin Multiplex Control: Alternative 5 (chip-specific) */
+#define PORT3_PCR7_MUX_mux00 0x00u  /*!<@brief Pin Multiplex Control: Alternative 0 (GPIO) */
 
 /*! @name PORT3_12 (number 38), ARD_D5
   @{ */
@@ -347,6 +350,20 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_ARD_D19_PIN 9U                   /*!<@brief PORT pin number */
 #define BOARD_INITPINS_ARD_D19_PIN_MASK (1U << 9U)      /*!<@brief PORT pin mask */
                                                         /* @} */
+
+/*! @name PORT2_2 (number 16), ADC0
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITPINS_ADC0_GPIO GPIO2               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITPINS_ADC0_GPIO_PIN 2U              /*!<@brief GPIO pin number */
+#define BOARD_INITPINS_ADC0_GPIO_PIN_MASK (1U << 2U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_INITPINS_ADC0_PORT PORT2               /*!<@brief PORT peripheral base pointer */
+#define BOARD_INITPINS_ADC0_PIN 2U                   /*!<@brief PORT pin number */
+#define BOARD_INITPINS_ADC0_PIN_MASK (1U << 2U)      /*!<@brief PORT pin mask */
+                                                     /* @} */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
