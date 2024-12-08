@@ -24,7 +24,7 @@ extern "C" {
 #elif	CPU_MCXA156VLL
 	#define EXAMPLE_MASTER				I3C0
 	#define I3C_MASTER_CLOCK_FREQUENCY	CLOCK_GetI3CFClkFreq()
-#elif	
+#elif	CPU_MCXA153VLH
 	#define EXAMPLE_MASTER				I3C0
 	#define I3C_MASTER_CLOCK_FREQUENCY	CLOCK_GetI3CFClkFreq()
 #else

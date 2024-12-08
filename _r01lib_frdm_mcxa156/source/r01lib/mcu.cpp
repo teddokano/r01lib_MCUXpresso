@@ -121,18 +121,18 @@ void init_mcu( void )
 	RESET_ReleasePeripheralReset( kPORT1_RST_SHIFT_RSTn );
 	RESET_ReleasePeripheralReset( kGPIO1_RST_SHIFT_RSTn );
 	
-	/* Attach clock to I3C 24MHZ */
-	CLOCK_SetClockDiv(kCLOCK_DivI3C0_FCLK, 4U);
-	CLOCK_AttachClk(kFRO_HF_DIV_to_I3C0FCLK);
+	/* Attach peripheral clock */
+	CLOCK_SetClockDiv( kCLOCK_DivI3C0_FCLK, 4U );
+	CLOCK_AttachClk( kFRO_HF_DIV_to_I3C0FCLK );
 
 	/* I2C */
-	CLOCK_SetClockDiv(kCLOCK_DivLPI2C0, 1u);
-	CLOCK_AttachClk(kFRO12M_to_LPI2C0);
+	CLOCK_SetClockDiv( kCLOCK_DivLPI2C0, 1u );
+	CLOCK_AttachClk( kFRO12M_to_LPI2C0 );
 
 	/* SPI */
 	CLOCK_SetClockDiv( kCLOCK_DivLPSPI0, 1u );
 	CLOCK_AttachClk( kFRO12M_to_LPSPI0 );
-	
+
 	CLOCK_EnableClock( kCLOCK_GateGPIO0 );
 	CLOCK_EnableClock( kCLOCK_GateGPIO1 );
 	CLOCK_EnableClock( kCLOCK_GateGPIO2 );
