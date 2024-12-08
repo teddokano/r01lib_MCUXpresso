@@ -9,7 +9,8 @@
 
 int main( void )
 {
-	printf( "Hello, world!\r\n" );
+	printf( "Hello, world! (in C style)\r\n" );
+	std::cout << "Hello, world! (in C++ style)" << std::endl;
 
 	return 0;
 }
