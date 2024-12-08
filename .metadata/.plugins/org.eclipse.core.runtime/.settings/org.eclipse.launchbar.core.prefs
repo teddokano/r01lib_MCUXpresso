@@ -126,6 +126,8 @@ org.eclipse.launchbar.core.descriptorType.default\:_r01lib_frdm_mcxn947\ LinkSer
 org.eclipse.launchbar.core.descriptorType.default\:_r01lib_frdm_mcxn947\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXA153\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXA156\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXA156\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXN236\ LinkServer\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXN236\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:app_template_FRDM_MCXN236__\ LinkServer\ Debug/activeLaunchMode=debug

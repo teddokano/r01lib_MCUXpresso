@@ -6,11 +6,11 @@
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
         <mruHistory>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/z_r01lib_test_SPI_FRDM_MCXA156/z_r01lib_test_SPI_FRDM_MCXA156 LinkServer Debug.launch&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/z_r01lib_test_I3C_FRDM_MCXA156/z_r01lib_test_I3C_FRDM_MCXA156 LinkServer Debug.launch&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/z_r01lib_test_InterruptIn_FRDM_MCXA156/z_r01lib_test_InterruptIn_FRDM_MCXA156 LinkServer Debug.launch&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/z_r01lib_test_I2C_FRDM_MCXA156/z_r01lib_test_I2C_FRDM_MCXA156 LinkServer Debug.launch&quot;/&gt;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/z_r01lib_demo_Hello_world_FRDM_MCXA156/z_r01lib_demo_Hello_world_FRDM_MCXA156 LinkServer Debug.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/z_r01lib_test_InterruptIn_FRDM_MCXN236/z_r01lib_test_InterruptIn_FRDM_MCXN236 LinkServer Debug.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/app_template_FRDM_MCXN947/app_template_FRDM_MCXN947 LinkServer Debug.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/_r01lib_frdm_mcxn947/_r01lib_frdm_mcxn947 LinkServer Debug.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/app_template_FRDM_MCXN236/app_template_FRDM_MCXN236 LinkServer Debug.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/app_template_FRDM_MCXA153/app_template_FRDM_MCXA153 LinkServer Debug.launch&quot;/&gt;&#10;"/>
         </mruHistory>
         <favorites/>
     </launchGroup>
