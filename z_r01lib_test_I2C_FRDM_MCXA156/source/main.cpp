@@ -7,7 +7,7 @@
 
 #include	"r01lib.h"
 
-//#define	D18__D19_TEST_WITH_P3T1755DP_ARD
+#define	D18__D19_TEST_WITH_P3T1755DP_ARD
 //#define	A4__A5_TEST_WITH_PCT2075DP_ARD	//	<< This setting cannot be used since TJA1057's RXD conflicts with SDA
 //#define	MB_SDA__MB_SCL_TEST_WITH_P3T1755DP_ARD
 //#define	MB_MOSI__MB_SCK_TEST_WITH_PCT2075DP_ARD
