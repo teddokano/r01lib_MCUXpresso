@@ -20,6 +20,7 @@ int main( void )
 	printf( "r01lib I3C test\r\n");
 
 	i3c.ccc_broadcast( CCC::BROADCAST_RSTDAA, NULL, 0 ); // Reset DAA
+	i3c.ccc_broadcast( CCC::BROADCAST_RSTDAA, NULL, 0 ); // Reset DAA	// Needs to clear I3C driver state. It generates zero-byte read (Bug?)
 	i3c.ccc_set( CCC::DIRECT_SETDASA, static_address, dynamic_address << 1 ); // Set Dynamic Address from Static Address
 
 	while ( true )
