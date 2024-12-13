@@ -4,6 +4,8 @@
 ### r01lib document generator for MCUXpresso workspace
 ### 	This script requires Doxygen
 ###		Generates documents from "_r01lib_*/source/Doxyfile" into "docs/r01lib_cocs/"
+###		
+###		Note: To update of \"r01lib\" source code to latest one, use "git submodule update --remote" command and run this script again
 ###
 
 import	os
@@ -39,8 +41,7 @@ for prj in prjs_path:
 ###
 
 print( "======= process started for .. =======" )
-print( "Doxyfile path:\n  " + "\n  ".join( doxy_path ) )
-print( "Generated docs will be in\n  " + dox_folder_path )
+print( "Doxyfile path(s):\n  " + "\n  ".join( doxy_path ) )
 print( "" )
 
 ###
@@ -69,9 +70,6 @@ else:
 
 print( "" )
 print( "======= process completed =======" )
-print( "Doxyfile(s) are found in:\n  " + "\n  ".join( doxy_path ) )
-print( "And the documents generated from:\n  " + doxy_path[ 0 ] + "/" + dox_file_name )
-print( "Generated docs are in:\n  " + dox_folder_path )
+print( "Documents are generated with:\n  " + doxy_path[ 0 ] + "/" + dox_file_name )
+print( "Generated docs are in:\n  " + dox_folder_path + "/" )
 print( "" )
-
-print( "Note: For update of \"r01lib\" source code to latest one, use next command and run this script again:\n" )
