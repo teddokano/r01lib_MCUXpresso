@@ -29,11 +29,12 @@ for prj in prjs_path:
 
 
 print( "======= process started for .. =======" )
-print( "projects:\n  " + "\n  ".join( [ os.path.basename( i ) for i in prjs_path ] ) )
+print( "projects / files:\n  " + "\n  ".join( [ os.path.basename( i ) for i in prjs_path ] ) )
 print( "Doxyfile path:\n  " + "\n  ".join( doxy_path ) )
 print( dox_folder_name + " are in ..\n  " + "\n  ".join( dox_folders ) )
 print( "" )
 
+"""
 for target in dox_folders:
 	try:
 		os.chdir( target )
@@ -51,6 +52,7 @@ for target in doxy_path:
 	else:
 		print( "####### generating documents: " + target )
 		subprocess.run( "doxygen", shell = True )
+"""
 
 for target in prjs_path:
 	print( "####### cleaning: " + target )			
@@ -84,8 +86,6 @@ for target in prjs_path:
 
 print( "" )
 print( "======= process completed for .. =======" )
-print( "projects:\n  " + "\n  ".join( [ os.path.basename( i ) for i in prjs_path ] ) )
-print( "Doxyfile path:\n  " + "\n  ".join( doxy_path ) )
-print( dox_folder_name + " are in ..\n  " + "\n  ".join( dox_folders ) )
-
+print( "projects / files:\n  " + "\n  ".join( [ os.path.basename( i ) for i in prjs_path ] ) )
 print( "done" )
+print( "" )
