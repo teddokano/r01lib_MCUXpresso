@@ -70,5 +70,5 @@ int main( void )
 ## References
 
 ### API document
-API documents of the `r01lib` can be found in `_r01lib_*/r01lib_docs/` folders. 
+API documents of the `r01lib` can be found in `docs/r01lib_docs/` folder. 
 
