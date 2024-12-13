@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">r01lib<span id="projectnumber">&#160;0.x</span>
+   <div id="projectname">r01lib<span id="projectnumber">&#160;0.33.5</span>
    </div>
    <div id="projectbrief">R01 library for abstracting MCUs</div>
   </td>
@@ -242,7 +242,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8cpp_source.html#l00017">17</a> of file <a class="el" href="_l_e_d_driver_8cpp_source.html">LEDDriver.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00088">bp</a>.</p>
+<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00087">bp</a>.</p>
 
 </div>
 </div>
@@ -271,7 +271,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8cpp_source.html#l00054">54</a> of file <a class="el" href="_l_e_d_driver_8cpp_source.html">LEDDriver.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00088">bp</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00082">n_channel</a>.</p>
+<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00087">bp</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00081">n_channel</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8cpp_source.html#l00048">48</a> of file <a class="el" href="_l_e_d_driver_8cpp_source.html">LEDDriver.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00088">bp</a>, <a class="el" href="_l_e_d_driver_8h_source.html#l00082">n_channel</a>, <a class="el" href="#aab3c888110aadbd9ace0d7727ea991fa">reg_access()</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00085">reg_PWM</a>.</p>
+<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00087">bp</a>, <a class="el" href="_l_e_d_driver_8h_source.html#l00081">n_channel</a>, <a class="el" href="#aab3c888110aadbd9ace0d7727ea991fa">reg_access()</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00084">reg_PWM</a>.</p>
 
 </div>
 </div>
@@ -315,15 +315,14 @@ Private Attributes</h2></td></tr>
 <p>Set PWM value for all channels</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reg</td><td>register number </td></tr>
-    <tr><td class="paramname">*value</td><td>pointer to PWM value in float (0.0 ~ 1.0) </td></tr>
+    <tr><td class="paramname">*value</td><td>Pointer to PWM value in float. Values should be in range from 0.0 to 1.0. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8cpp_source.html#l00033">33</a> of file <a class="el" href="_l_e_d_driver_8cpp_source.html">LEDDriver.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00088">bp</a>, <a class="el" href="_l_e_d_driver_8h_source.html#l00082">n_channel</a>, <a class="el" href="#aab3c888110aadbd9ace0d7727ea991fa">reg_access()</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00085">reg_PWM</a>.</p>
+<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00087">bp</a>, <a class="el" href="_l_e_d_driver_8h_source.html#l00081">n_channel</a>, <a class="el" href="#aab3c888110aadbd9ace0d7727ea991fa">reg_access()</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00084">reg_PWM</a>.</p>
 
 </div>
 </div>
@@ -348,15 +347,15 @@ Private Attributes</h2></td></tr>
 <p>Set PWM value for a channel</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reg</td><td>register number </td></tr>
-    <tr><td class="paramname">value</td><td>PWM value in float (0.0 ~ 1.0) </td></tr>
+    <tr><td class="paramname">ch</td><td>channel number </td></tr>
+    <tr><td class="paramname">value</td><td>PWM value in float. Values should be in range from 0.0 to 1.0. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8cpp_source.html#l00023">23</a> of file <a class="el" href="_l_e_d_driver_8cpp_source.html">LEDDriver.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00088">bp</a>, <a class="el" href="#aab3c888110aadbd9ace0d7727ea991fa">reg_access()</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00085">reg_PWM</a>.</p>
+<p class="reference">References <a class="el" href="_l_e_d_driver_8h_source.html#l00087">bp</a>, <a class="el" href="#aab3c888110aadbd9ace0d7727ea991fa">reg_access()</a>, and <a class="el" href="_l_e_d_driver_8h_source.html#l00084">reg_PWM</a>.</p>
 
 </div>
 </div>
@@ -511,7 +510,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00088">88</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00087">87</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
 
 </div>
 </div>
@@ -527,7 +526,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00082">82</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00081">81</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +550,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00086">86</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00085">85</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
 
 </div>
 </div>
@@ -575,7 +574,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00085">85</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_e_d_driver_8h_source.html#l00084">84</a> of file <a class="el" href="_l_e_d_driver_8h_source.html">LEDDriver.h</a>.</p>
 
 </div>
 </div>
