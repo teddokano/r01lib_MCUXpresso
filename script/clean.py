@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+###
+### MCUXpresso workspace cleaning script
+### 	Cleans all projects with keeping files needed for MCUXpresso VSC importing
+###
+
 import	os
 import	subprocess
 
@@ -15,6 +20,7 @@ prjs_path	= [ i for i in prjs_path if "/." not in i ]
 prjs_path	= [ i for i in prjs_path if "RTOS_TAD_logs" not in i ]
 prjs_path.sort()
 
+"""
 doxy_path	= []
 dox_folders	= []
 
@@ -26,13 +32,13 @@ for prj in prjs_path:
 		for f in files:
 			if ( dox_file_name == f ):
 				doxy_path	+= [ rootdir ]
-
+"""
 
 print( "======= process started for .. =======" )
 print( "projects / files:\n  " + "\n  ".join( [ os.path.basename( i ) for i in prjs_path ] ) )
-print( "Doxyfile path:\n  " + "\n  ".join( doxy_path ) )
-print( dox_folder_name + " are in ..\n  " + "\n  ".join( dox_folders ) )
-print( "" )
+#print( "Doxyfile path:\n  " + "\n  ".join( doxy_path ) )
+#print( dox_folder_name + " are in ..\n  " + "\n  ".join( dox_folders ) )
+#print( "" )
 
 """
 for target in dox_folders:
@@ -56,13 +62,15 @@ for target in doxy_path:
 
 for target in prjs_path:
 	print( "####### cleaning: " + target )			
-	try:
-		os.chdir( target + "/Debug/" )
-	except:
-		pass
-	else:
-		print( "####### cleaning: " + target )
-		subprocess.run( "make -r -j9 clean", shell = True )
+
+	for cnfg in build_configs:
+		try:
+			os.chdir( target + "/" + cnfg + "/" )
+		except:
+			pass
+		else:
+			print( "####### cleaning: " + target + " [" + cnfg + "]" )
+			subprocess.run( "make -r -j9 clean", shell = True )
 	
 	try:
 		os.chdir( target )

@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+###
+### r01lib document generator for MCUXpresso workspace
+### 	This script requires Doxygen
+###		Generates documents from "_r01lib_*/source/Doxyfile" into "docs/r01lib_cocs/"
+###
+
 import	os
 import	subprocess
 
