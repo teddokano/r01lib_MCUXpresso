@@ -620,7 +620,7 @@
 									<listOptionValue builtIn="false" value="_r01lib_frdm_mcxa156"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.paths.28321679" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa156/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/_r01lib_frdm_mcxa156/Release}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.group.298944260" name="Group libraries (-Wl,--start-group  ...  -Wl,--end-group)" superClass="gnu.cpp.link.option.group"/>
 								<option id="gnu.cpp.link.option.flags.2093319185" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
