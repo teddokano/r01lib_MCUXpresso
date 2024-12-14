@@ -6,7 +6,7 @@
  * Generated linker script file for MCXN947
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.9 [Build 25] [2024-09-26] on 2024/12/14 7:58:35
+ * MCUXpresso IDE v24.9 [Build 25] [2024-09-26] on 2024/12/15 6:17:41
  */
 
 INCLUDE "z_r01lib_test_DigitalInOut_pin_mode_FRDM_MCXN947_Release_library.ld"
