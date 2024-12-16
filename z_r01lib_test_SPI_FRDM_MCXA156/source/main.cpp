@@ -7,7 +7,7 @@
 
 #include	"r01lib.h"
 
-SPI			spi( MB_MOSI, MB_MISO, MB_SCK, MB_CS );	//	MOSI, MISO, SCLK, CS
+SPI			spi( D11, D12, D13, D10 );	//	MOSI, MISO, SCLK, CS
 
 int main( void )
 {
